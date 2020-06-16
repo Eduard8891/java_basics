@@ -18,7 +18,7 @@ public class Cat
 
     public void meow()
     {
-        weight = weight - 1000;
+        weight = weight - 100;
         System.out.println("Meow");
     }
 

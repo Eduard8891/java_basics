@@ -25,17 +25,20 @@ public class Loader
 
         Cat rediska = new Cat();
         System.out.println("Редиска весит: " + rediska.getWeight());
-        rediska.meow();
-        rediska.meow();
-        rediska.meow();
+        while (rediska.getWeight() > 1000){
+
+            rediska.meow();
+        }
         System.out.println("Редиска весит: " + rediska.getWeight());
         System.out.println("Редиска весит: " + rediska.getStatus());
 
         Cat vovka = new Cat();
         System.out.println("Вовка весит: " + vovka.getWeight());
-        vovka.drink((double) 500);
-        vovka.feed((double) 5000);
-        vovka.drink((double) 500);
+        while (vovka.getWeight() < 9000) {
+
+            vovka.drink((double) 500);
+            vovka.feed((double) 500);
+        }
         System.out.println("Вовка весит: " + vovka.getWeight());
         System.out.println("Вовка весит: " + vovka.getStatus());
     }
