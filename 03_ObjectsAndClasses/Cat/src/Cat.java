@@ -22,9 +22,15 @@ public class Cat
         System.out.println("Meow");
     }
 
-    public void feed(Double amount)
+    public void pee()
     {
-        weight = weight + amount;
+        weight = weight - 200;
+        System.out.println("Pee");
+    }
+
+    public double feed(Double amount)
+    {
+        return weight = weight + amount;
     }
 
     public void drink(Double amount)
