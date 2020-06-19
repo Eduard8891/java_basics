@@ -3,12 +3,11 @@ public class Cat
 {
     private double originWeight;
     private double weight;
-
     private double minWeight;
     private double maxWeight;
+    static double weightFood;
 
-    public Cat()
-    {
+    public Cat() {
         weight = 1500.0 + 3000.0 * Math.random();
         originWeight = weight;
         minWeight = 1000.0;
@@ -16,30 +15,26 @@ public class Cat
 
     }
 
-    public void meow()
-    {
+    public void meow() {
         weight = weight - 100;
         System.out.println("Meow");
     }
 
-    public void pee()
-    {
+    public void pee() {
         weight = weight - 200;
         System.out.println("Pee");
     }
 
-    public double feed(Double amount)
-    {
-        return weight = weight + amount;
+    public double feed(Double amount) {
+        weight = weight + amount;
+        return weightFood = amount;
     }
 
-    public void drink(Double amount)
-    {
+    public void drink(Double amount) {
         weight = weight + amount;
     }
 
-    public Double getWeight()
-    {
+    public Double getWeight() {
         return weight;
     }
 
