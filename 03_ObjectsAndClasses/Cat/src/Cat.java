@@ -23,16 +23,19 @@ public class Cat
     }
 
     public void pee() {
+        if (weight < 9000 || weight < 1000)
         weight = weight - 200;
         System.out.println("Pee");
     }
 
     public double feed(Double amount) {
+        if (weight < 9000 || weight < 1000)
         weight = weight + amount;
-        return weightFood = amount;
+        return weightFood = weightFood + amount;
     }
 
     public void drink(Double amount) {
+        if (weight < 9000 || weight < 1000)
         weight = weight + amount;
     }
 
@@ -58,7 +61,7 @@ public class Cat
         }
     }
 
-    static int getCount () {
+    public static int getCount () {
         return count;
     }
 }

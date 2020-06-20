@@ -42,6 +42,6 @@ public class Loader
         System.out.println("Вовка весит: " + vovka.getWeight());
         System.out.println("Вовка весит: " + vovka.getStatus());
         System.out.println("Еда весит: " + Cat.weightFood);
-        System.out.println("Количество живых кошек: " + Cat.count);
+        System.out.println("Количество живых кошек: " + Cat.getCount());
     }
 }
