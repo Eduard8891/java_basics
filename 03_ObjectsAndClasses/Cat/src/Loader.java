@@ -1,11 +1,25 @@
 
 public class Loader
 {
+    private static Cat getKitten () {
+        Cat getKitten = new Cat(1100);
+        return getKitten;
+    }
+
     public static void main(String[] args)
     {
         Cat cat = new Cat();
 
         System.out.println(cat.getStatus());
+
+        Cat lola = new Cat(1100);
+        System.out.println("Лола весит: " + lola.getWeight());
+
+        Cat dosya = new Cat(1100);
+        System.out.println("Дося весит: " + dosya.getWeight());
+
+        Cat busya = new Cat(1100);
+        System.out.println("Буся весит: " + busya.getWeight());
 
         Cat pesik = new Cat();
         pesik.drink((double) 50);
