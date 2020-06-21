@@ -2,14 +2,24 @@
 public class Cat
 {
     public static final int EYES_COUNT = 2;
-    public static final int MIN_WEIGHT = 100;
-    public static final int MAX_WEIGHT = 10000;
+    public static final int MIN_WEIGHT = 1000;
+    public static final int MAX_WEIGHT = 9000;
     private double originWeight;
     private double weight;
     private double minWeight;
     private double maxWeight;
     static double weightFood;
-    static int count = -1;
+    static int count = 0;
+
+    private boolean isAlive() {
+        return weight >= MIN_WEIGHT && weight <= MAX_WEIGHT;
+    }
+
+    private void decreaseCountIfDead() {
+        if (!isAlive()) {
+            count--;
+        }
+    }
 
     public Cat() {
         weight = 1500.0 + 3000.0 * Math.random();
@@ -21,29 +31,40 @@ public class Cat
     }
     public Cat (double weight)
     {
+        this();
         this.weight = weight;
+        count ++;
     }
 
     public void meow() {
-        weight = weight - 100;
-        System.out.println("Meow");
+        if (isAlive()) {
+            weight = weight - 100;
+            System.out.println("Meow");
+            decreaseCountIfDead();
+        }
     }
 
     public void pee() {
-        if (weight < 9000 || weight < 1000)
-        weight = weight - 200;
-        System.out.println("Pee");
+        if (isAlive()) {
+            weight = weight - 200;
+            System.out.println("Pee");
+            decreaseCountIfDead();
+        }
     }
 
-    public double feed(Double amount) {
-        if (weight < 9000 || weight < 1000)
-        weight = weight + amount;
-        return weightFood = weightFood + amount;
+    public void feed(Double amount) {
+        if (isAlive()) {
+            weight = weight + amount;
+            weightFood = weightFood + amount;
+            System.out.println("Feed");
+            decreaseCountIfDead();
+        }
     }
 
     public void drink(Double amount) {
-        if (weight < 9000 || weight < 1000)
+        if (isAlive())
         weight = weight + amount;
+        System.out.println("Drink");
     }
 
     public Double getWeight() {
@@ -71,4 +92,5 @@ public class Cat
     public static int getCount () {
         return count;
     }
+
 }

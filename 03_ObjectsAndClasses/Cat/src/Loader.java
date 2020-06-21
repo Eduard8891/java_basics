@@ -26,7 +26,7 @@ public class Loader
         System.out.println("Песик весит: " + pesik.getWeight());
 
         Cat vinny = new Cat();
-        vinny.meow();
+        vinny.pee();
         System.out.println("Винни весит: " + vinny.getWeight());
 
         Cat serega = new Cat();
