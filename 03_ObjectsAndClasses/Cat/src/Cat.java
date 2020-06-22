@@ -33,7 +33,6 @@ public class Cat
     {
         this();
         this.weight = weight;
-        count ++;
     }
 
     public void meow() {
@@ -74,11 +73,9 @@ public class Cat
     public String getStatus()
     {
         if(weight < minWeight) {
-            count --;
             return "Dead";
         }
         else if(weight > maxWeight) {
-            count --;
             return "Exploded";
         }
         else if(weight > originWeight) {
