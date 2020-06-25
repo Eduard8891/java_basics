@@ -8,6 +8,7 @@ public class Cat
     private double weight;
     private double minWeight;
     private double maxWeight;
+    private String color;
     static double weightFood;
     static int count = 0;
 
@@ -19,6 +20,14 @@ public class Cat
         if (!isAlive()) {
             count--;
         }
+    }
+
+    public void setColor (String color) {
+        this.color = color;
+    }
+
+    public String getColor () {
+        return color;
     }
 
     public Cat() {
@@ -36,34 +45,35 @@ public class Cat
     }
 
     public void meow() {
-        if (isAlive()) {
+        if (isAlive())
             weight = weight - 100;
             System.out.println("Meow");
             decreaseCountIfDead();
-        }
+
     }
 
     public void pee() {
-        if (isAlive()) {
+        if (isAlive())
             weight = weight - 200;
             System.out.println("Pee");
             decreaseCountIfDead();
-        }
+
     }
 
     public void feed(Double amount) {
-        if (isAlive()) {
+        if (isAlive())
             weight = weight + amount;
             weightFood = weightFood + amount;
             System.out.println("Feed");
             decreaseCountIfDead();
-        }
+
     }
 
     public void drink(Double amount) {
         if (isAlive())
-        weight = weight + amount;
-        System.out.println("Drink");
+            weight = weight + amount;
+            System.out.println("Drink");
+            decreaseCountIfDead();
     }
 
     public Double getWeight() {

@@ -39,7 +39,7 @@ public class Loader
 
         Cat rediska = new Cat();
         System.out.println("Редиска весит: " + rediska.getWeight());
-        while (rediska.getWeight() > 1000){
+        while (rediska.getWeight() > Cat.MIN_WEIGHT){
 
             rediska.meow();
         }
@@ -48,7 +48,7 @@ public class Loader
 
         Cat vovka = new Cat();
         System.out.println("Вовка весит: " + vovka.getWeight());
-        while (vovka.getWeight() < 9000) {
+        while (vovka.getWeight() < Cat.MAX_WEIGHT) {
 
             vovka.drink((double) 500);
             vovka.feed((double) 500);
