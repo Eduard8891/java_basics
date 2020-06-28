@@ -9,6 +9,7 @@ public class Cat
     private double minWeight;
     private double maxWeight;
     private String color;
+    public String name;
     static double weightFood;
     static int count = 0;
 
@@ -30,7 +31,20 @@ public class Cat
         return color;
     }
 
+    public void setName (String name) {
+        this.name = name;
+    }
+
+    public String getName () {
+        return name;
+    }
+
+    public void setWeight (double weight) {
+        this.weight = weight;
+    }
+
     public Cat() {
+        name = getName();
         weight = 1500.0 + 3000.0 * Math.random();
         originWeight = weight;
         minWeight = 1000.0;
@@ -38,8 +52,7 @@ public class Cat
         count ++;
 
     }
-    public Cat (double weight)
-    {
+    public Cat (double weight) {
         this();
         this.weight = weight;
     }

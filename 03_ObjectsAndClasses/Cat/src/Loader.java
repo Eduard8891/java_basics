@@ -20,10 +20,20 @@ public class Loader
 
         Cat busya = new Cat(1100);
         System.out.println("Буся весит: " + busya.getWeight());
+        System.out.println("================================");
 
         Cat pesik = new Cat();
-        pesik.drink((double) 50);
-        System.out.println("Песик весит: " + pesik.getWeight());
+        pesik.setName("Pesik");
+        pesik.setWeight(2500);
+        System.out.println("Имя собаки : " + pesik.getName());
+        System.out.println("Собака весит: " + pesik.getWeight());
+
+        Cat copyPesik = new Cat();
+        copyPesik.setName(pesik.getName());
+        copyPesik.setWeight(pesik.getWeight());
+        System.out.println("Имя собаки : " + copyPesik.getName());
+        System.out.println("Собака весит: " + copyPesik.getWeight());
+        System.out.println("================================");
 
         Cat vinny = new Cat();
         vinny.pee();
