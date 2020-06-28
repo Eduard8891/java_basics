@@ -26,7 +26,7 @@ public class RoadController
             System.out.println(car);
 
             //Пропускаем автомобили спецтранспорта бесплатно
-            if (car.isSpecial) {
+            if (car.isSpecial()) {
                 openWay();
                 continue;
             }
@@ -60,7 +60,7 @@ public class RoadController
             if (weight > passengerCarMaxWeight)
             {
                 price = passengerCarPrice;
-                if (car.hasVehicle) {
+                if (car.hasVehicle()) {
                     price = price + vehicleAdditionalPrice;
                 }
             }
