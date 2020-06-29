@@ -8,7 +8,6 @@ public class Cat
     private double weight;
     private double minWeight;
     private double maxWeight;
-    private String color;
     public String name;
     static double weightFood;
     static int count = 0;
@@ -23,13 +22,9 @@ public class Cat
         }
     }
 
-    public void setColor (String color) {
-        this.color = color;
+    public void setColor (Color color) {
     }
 
-    public String getColor () {
-        return color;
-    }
 
     public void setName (String name) {
         this.name = name;
@@ -113,4 +108,6 @@ public class Cat
         return count;
     }
 
+    public void setColor() {
+    }
 }
