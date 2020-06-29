@@ -9,6 +9,7 @@ public class Loader
     public static void main(String[] args)
     {
         Cat cat = new Cat();
+        cat.setColor();
 
         System.out.println(cat.getStatus());
 
@@ -25,12 +26,14 @@ public class Loader
         Cat pesik = new Cat();
         pesik.setName("Pesik");
         pesik.setWeight(2500);
+        pesik.setColor(Color.BLACK);
         System.out.println("Имя собаки : " + pesik.getName());
         System.out.println("Собака весит: " + pesik.getWeight());
 
         Cat copyPesik = new Cat();
         copyPesik.setName(pesik.getName());
         copyPesik.setWeight(pesik.getWeight());
+        copyPesik.setColor(Color.BLACK);
         System.out.println("Имя собаки : " + copyPesik.getName());
         System.out.println("Собака весит: " + copyPesik.getWeight());
         System.out.println("================================");
