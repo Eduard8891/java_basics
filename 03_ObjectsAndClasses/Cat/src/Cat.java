@@ -108,6 +108,9 @@ public class Cat
         return count;
     }
 
-    public void setColor() {
+
+
+    private Color color(){
+        return color();
     }
 }

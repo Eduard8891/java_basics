@@ -6,10 +6,10 @@ public class Loader
         return getKitten;
     }
 
+
     public static void main(String[] args)
     {
         Cat cat = new Cat();
-        cat.setColor();
 
         System.out.println(cat.getStatus());
 
@@ -27,15 +27,15 @@ public class Loader
         pesik.setName("Pesik");
         pesik.setWeight(2500);
         pesik.setColor(Color.BLACK);
-        System.out.println("Имя собаки : " + pesik.getName());
-        System.out.println("Собака весит: " + pesik.getWeight());
+        System.out.println("Имя кота : " + pesik.getName());
+        System.out.println("Вес кота: " + pesik.getWeight());
 
         Cat copyPesik = new Cat();
         copyPesik.setName(pesik.getName());
         copyPesik.setWeight(pesik.getWeight());
         copyPesik.setColor(Color.BLACK);
-        System.out.println("Имя собаки : " + copyPesik.getName());
-        System.out.println("Собака весит: " + copyPesik.getWeight());
+        System.out.println("Имя кота : " + copyPesik.getName());
+        System.out.println("Вес кота: " + copyPesik.getWeight());
         System.out.println("================================");
 
         Cat vinny = new Cat();
