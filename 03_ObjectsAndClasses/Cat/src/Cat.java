@@ -1,3 +1,4 @@
+import com.sun.source.tree.CompoundAssignmentTree;
 
 public class Cat
 {
@@ -20,9 +21,6 @@ public class Cat
         if (!isAlive()) {
             count--;
         }
-    }
-
-    public void setColor (Color color) {
     }
 
 
@@ -109,8 +107,5 @@ public class Cat
     }
 
 
-
-    private Color color(){
-        return color();
     }
 }
