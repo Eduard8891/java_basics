@@ -1,3 +1,4 @@
+import java.awt.Color;
 
 public class Loader
 {
@@ -10,6 +11,8 @@ public class Loader
     public static void main(String[] args)
     {
         Cat cat = new Cat();
+        cat.setColor(Color.WHITE);
+
 
         System.out.println(cat.getStatus());
 
@@ -29,6 +32,7 @@ public class Loader
 
         System.out.println("Имя кота : " + pesik.getName());
         System.out.println("Вес кота: " + pesik.getWeight());
+        System.out.println("Цвет кота : " + pesik.getColor());
 
         Cat copyPesik = new Cat();
         copyPesik.setName(pesik.getName());
@@ -36,6 +40,7 @@ public class Loader
 
         System.out.println("Имя кота : " + copyPesik.getName());
         System.out.println("Вес кота: " + copyPesik.getWeight());
+        System.out.println("Цвет кота : " + copyPesik.getColor());
         System.out.println("================================");
 
         Cat vinny = new Cat();

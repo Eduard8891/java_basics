@@ -1,4 +1,4 @@
-import com.sun.source.tree.CompoundAssignmentTree;
+import java.awt.Color;
 
 public class Cat
 {
@@ -10,6 +10,7 @@ public class Cat
     private double minWeight;
     private double maxWeight;
     public String name;
+    private Color color;
     static double weightFood;
     static int count = 0;
 
@@ -23,6 +24,13 @@ public class Cat
         }
     }
 
+    public Color getColor(){
+        return color;
+    }
+
+    public void setColor(Color catColor){
+        this.color = catColor;
+    }
 
     public void setName (String name) {
         this.name = name;
@@ -108,4 +116,4 @@ public class Cat
 
 
     }
-}
+
