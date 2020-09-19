@@ -29,7 +29,7 @@ public class Loader
         Cat pesik = new Cat();
         pesik.setName("Pesik");
         pesik.setWeight(2500);
-
+        pesik.setColor(Color.BLACK);
         System.out.println("Имя кота : " + pesik.getName());
         System.out.println("Вес кота: " + pesik.getWeight());
         System.out.println("Цвет кота : " + pesik.getColor());
@@ -37,7 +37,7 @@ public class Loader
         Cat copyPesik = new Cat();
         copyPesik.setName(pesik.getName());
         copyPesik.setWeight(pesik.getWeight());
-
+        copyPesik.setColor(Color.BLACK);
         System.out.println("Имя кота : " + copyPesik.getName());
         System.out.println("Вес кота: " + copyPesik.getWeight());
         System.out.println("Цвет кота : " + copyPesik.getColor());
