@@ -15,8 +15,6 @@ public class Main
 
     public static Integer sumDigits(Integer number){
         String sLength1 = number.toString();
-        Integer vLength = Integer.valueOf(sLength1);
-        int numParse = Integer.parseInt(sLength1);
         int iLength = sLength1.length();
         int sum = 0;
         for (int num = 0; num < iLength; num++) {
