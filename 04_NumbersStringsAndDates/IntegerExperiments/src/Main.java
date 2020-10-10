@@ -19,8 +19,8 @@ public class Main
         int sum = 0;
         for (int num = 0; num < iLength; num++) {
             char p = sLength1.charAt(num);
-            int intP = p - '0';
-            sum = sum + intP;
+            int r = Character.getNumericValue(p);
+            sum = sum + r;
         }
         System.out.println("Сумма чисел числа "+number+" равна "+sum);
         return 0;
