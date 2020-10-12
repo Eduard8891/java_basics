@@ -16,7 +16,7 @@ public class Main {
         System.out.println(GeometryCalculator.isTriangleRightAngled(5, 5, 11));
 
         System.out.println("\nTriangle Square");
-        System.out.println(GeometryCalculator.getTriangleSquare(4.0, 10.0, 5.0));
+        System.out.println(GeometryCalculator.getTriangleSquare(4.0, 10.0,  5.0));
         System.out.println(GeometryCalculator.getTriangleSquare(7.0, 7.0, 8.10));
         System.out.println(GeometryCalculator.getTriangleSquare(4.0, 7.0, 8.10));
     }
