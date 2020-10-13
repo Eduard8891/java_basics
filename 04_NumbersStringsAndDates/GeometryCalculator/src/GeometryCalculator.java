@@ -7,7 +7,7 @@ public class GeometryCalculator {
 
     // метод должен использовать абсолютное значение radius
     public static double getSphereVolume(double radius) {
-        double v = (4 / 3) * Math.PI * radius * radius * radius;
+        double v = (4.0 / 3.0) * Math.PI * radius * radius * radius;
         return v;
     }
 
@@ -22,7 +22,7 @@ public class GeometryCalculator {
     // перед расчетом площади рекомендуется проверить возможен ли такой треугольник
     // методом isTriangleRightAngled, если невозможен вернуть -1.0
     public static double getTriangleSquare(double a, double b, double c) {
-        if (isTriangleRightAngled(a, b, c) == false) {
+        if (!isTriangleRightAngled(a, b, c)) {
             return -1.0;
         }
         else {
