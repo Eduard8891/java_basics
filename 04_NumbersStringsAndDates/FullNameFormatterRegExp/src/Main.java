@@ -1,45 +1,34 @@
 import java.util.Scanner;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 public class Main {
 
+    final static String REG_LAST_NAME = "([А-ЯЁ][а-яё]+[\\s|-]?([А-ЯЁ]?[а-яё]+))";
+    final static String REG_NAME = "([А-ЯЁ][а-яё]*-?([А-ЯЁ]?[а-яё]+))";
+    final static String REG_FULL_NAME = String.format("^%s %s %s$", REG_NAME, REG_NAME, REG_LAST_NAME);
+
     public static void main(String[] args) {
 
-        Scanner scanner = new Scanner(System.in);
-        System.out.println("Введите ФИО!");
         while (true) {
-            String iinput = scanner.nextLine();
-            String input = iinput.trim();
-            if (input.length() > 5) {
+            Scanner scanner = new Scanner(System.in);
+            System.out.println("Введите ФИО!");
+            String input = scanner.nextLine();
 
-                String fio = input.replaceAll("[^а-я,^А-Я]"," ");
+            Pattern name = Pattern.compile(REG_NAME);
+            Matcher inN = name.matcher(input);
+            Pattern lname = Pattern.compile(REG_LAST_NAME);
+            Matcher inLN = lname.matcher(input);
+            String.format(REG_FULL_NAME);
+
+            if (input.matches(REG_FULL_NAME)) {
 
 
-                String family = fio.substring(0, fio.indexOf(' '));
-                String familyT = family.trim();
-
-
-                String name = fio.substring(input.indexOf(' '), fio.lastIndexOf(' '));
-                String nameT = name.trim();
-
-                int lNum = fio.length();
-                String mName = fio.substring(fio.lastIndexOf(' '), lNum);
-                String mNameT = mName.trim();
-
-                if (familyT.length() >= 2) {
-                    System.out.println("Фамилия: " + familyT);
-                    if (nameT.length() >= 2) {
-                        System.out.println("Имя: " + nameT);
-                        if (mNameT.length() >= 2) {
-                            System.out.println("Отчество: " + mNameT);
-                        }
-                    }
-                }
-                else {
-                    System.out.println("Введенная строка не является ФИО");
-                }
-
+                System.out.printf(input + "\n");
                 break;
             }
+            else System.out.println("Неправильный формат ввода! Поробуйте еще раз.");
+
         }
     }
 }
