@@ -19,16 +19,23 @@ public class Main {
             Matcher inN = name.matcher(input);
             Pattern lname = Pattern.compile(REG_LAST_NAME);
             Matcher inLN = lname.matcher(input);
-            String.format(REG_FULL_NAME);
 
             if (input.matches(REG_FULL_NAME)) {
-
-
-                System.out.printf(input + "\n");
+                output(input);
                 break;
             }
             else System.out.println("Неправильный формат ввода! Поробуйте еще раз.");
 
         }
+    }
+    public static String output (String input) {
+        String [] fio = input.split("\\s+");
+        System.out.println("Фамилия: " + fio[0]);
+        System.out.println("Имя: " + fio[1]);
+        System.out.print("Отчество: " + fio[2]);
+        if (fio.length == 4) {
+            System.out.println(" " + fio[3]);
+            }
+        return input;
     }
 }
