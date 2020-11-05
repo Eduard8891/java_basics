@@ -8,6 +8,7 @@ public class Main {
     static final double MIN_TEMP = 32.00;
     static final double MIN_NORMAL_TEMP = 36.00;
     static final double MAX_NORMAL_TEMP = 37.40;
+    private static int n;
 
 
     public static void main(String[] args) {
@@ -22,7 +23,7 @@ public class Main {
         }
         System.out.println("=======================================================================");
         temperature();
-        arrayList();
+        arrayList(20);
     }
 
     public static void temperature () {
@@ -47,17 +48,10 @@ public class Main {
         System.out.println("=======================================================================");
     }
 
-    public static void arrayList () {
+    public static void arrayList (int n) {
 
-        String [][] eX = {
-                {"x"," "," "," "," "," ","x"},
-                {" ","x"," "," "," ","x"," "},
-                {" "," ","x"," ","x"," "," "},
-                {" "," "," ","x"," "," "," "},
-                {" "," ","x"," ","x"," "," "},
-                {" ","x"," "," "," ","x"," "},
-                {"x"," "," "," "," "," ","x"}
-        };
+
+        String [][] eX = new String [n][n];
 
         for (int i = 0; i < eX.length; i++)
         {
@@ -65,11 +59,15 @@ public class Main {
 
             for (int k = 0; k < eX[i].length; k++)
             {
-                System.out.print(eX[i][k]);
+                if (i == k) {
+                    System.out.print("x");
+                }
+                if (k == (eX[i].length-1)-i) {
+                    System.out.print("x");
+                }
+                System.out.print(" ");
+
             }
-
         }
-
     }
-
 }
