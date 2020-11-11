@@ -55,12 +55,12 @@ public class Main {
                     for (String email: emails) {
 
                         System.out.println(email);
+
                     }
                     break;
 
-            }
 
-            if (!splitIn[0].equals("LIST") && !splitIn[0].equals("ADD")) {
+                default:
 
                 System.out.println("Неверная команда!");
             }
