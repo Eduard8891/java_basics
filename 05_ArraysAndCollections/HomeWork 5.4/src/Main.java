@@ -2,18 +2,17 @@ import java.util.*;
 
 public class Main {
 
+    static HashMap <String , String> numBook = new HashMap<>(); // Ключ, Значение
+    static Scanner scanner = new Scanner(System.in);
+
     public static void main(String[] args)
     {
-        TreeMap <String , String> numBook = new TreeMap<>(); // Ключ, Значение
-
         numBook.put("89599564565", "Сергей");
         numBook.put("89564568573", "Елена");
         numBook.put("89564589665", "Брюс");
         numBook.put("89452564565", "Людовиг Х");
 
         Set<String> keys = numBook.keySet();
-
-        Scanner scanner = new Scanner(System.in);
 
         for (;;)
         {
@@ -43,43 +42,54 @@ public class Main {
             {
                     System.out.println(input+", имя: "+numBook.get(input));
             }
-
-
-            else {
-                if (input.matches("\\d{4,11}")) // Проверка на цифры
-                {
-                    System.out.println("Введите имя!");
-
-                    String name = scanner.nextLine();
-
-                    if (name.matches("[а-яёА-ЯЁ]+")) //Проверка на буквы
-                    {
-                        numBook.put((input), name);
-
-                        System.out.println("Добавлено!");
-                    }
-                    else System.out.println("Неверный формат имени!");
-
-                    continue;
-                }
-                if (input.matches("[а-яёА-ЯЁ]+")) //Проверка на буквы
-                {
-                    System.out.println("Введите номер!");
-
-                    String number = scanner.nextLine();
-
-                    if (number.matches("\\d{4,11}")) //Проверка на цифры
-                    {
-                        numBook.put((number), input);
-
-                        System.out.println("Добавлено!");
-                    }
-                    else System.out.println("Неверный формат номера!");
-                }
-                else System.out.println("Неверный формат ввода!");
+            else
+            if (input.matches("\\d{4,11}")) // Проверка на цифры
+            {
+                addNumber (input);
+            }
+            if (input.matches("[а-яёА-ЯЁ]+"))
+            {
+                addName (input);
             }
         }
     }
+
+
+    private static void addNumber (String input)
+        {
+            System.out.println("Введите имя!");
+
+            String name = scanner.nextLine();
+
+            if (name.matches("[а-яёА-ЯЁ]+")) //Проверка на буквы
+            {
+                putNumber(input, name);
+            }
+            else System.out.println("Неверный формат имени!");
+    }
+
+
+    private static void addName (String input) {
+
+        System.out.println("Введите номер!");
+
+        String number = scanner.nextLine();
+
+        if (number.matches("\\d{4,11}")) //Проверка на цифры
+        {
+            putNumber(number, input);
+
+        } else System.out.println("Неверный формат номера!");
+    }
+
+
+    private static void putNumber (String number, String name)
+    {
+        numBook.put(number, name);
+
+        System.out.println("Добавлено!");
+    }
+
 
     private static void printMap (Map <String, String> map)
     {
