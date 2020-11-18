@@ -81,14 +81,17 @@ public class Main
     {
         start = System.currentTimeMillis();
 
-        if (carNumbers.contains(input))
+        for (String number: carNumbers)
         {
-            long duration = System.currentTimeMillis() - start;
+            if (number.equals(input))
+            {
+                long duration = System.currentTimeMillis() - start;
 
-            System.out.println("Номер "+input+" найден прямым перебором за "+duration+" мс");
+                System.out.println("Номер "+input+" найден прямым перебором за "+duration+" мс");
+            }
         }
-        else System.out.println("Номер "+input+" не найден");
     }
+
 
     private static void binarySearchArraylist (String input)
     {
