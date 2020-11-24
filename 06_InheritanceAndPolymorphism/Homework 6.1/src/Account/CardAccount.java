@@ -1,6 +1,6 @@
 package Account;
 
-public class CardAccount extends Operations
+public class CardAccount extends BankAccount
 {
     public CardAccount(int score) {
         super(score);

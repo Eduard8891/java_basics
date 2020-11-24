@@ -1,11 +1,11 @@
 package Account;
 
-public class Operations {
+public class BankAccount {
 
     public int score;
     static long start;
 
-    public Operations(int score)
+    public BankAccount(int score)
     {
         this.score = score;
     }
@@ -34,5 +34,15 @@ public class Operations {
     public String balanceAccount ()
     {
         return "Денег на счете "+score;
+    }
+
+    public boolean send (BankAccount bankAccount, int amount)
+    {
+        if (score > amount) {
+            takeMoney(amount);
+            bankAccount.putMoney(amount);
+            return true;
+        }
+        return false;
     }
 }

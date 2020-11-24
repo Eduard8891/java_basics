@@ -1,6 +1,6 @@
 package Account;
 
-public class DepositaryAccount extends Operations
+public class DepositaryAccount extends BankAccount
 {
 
     public DepositaryAccount(int score)
@@ -21,4 +21,6 @@ public class DepositaryAccount extends Operations
 
         return "Баланс счета: "+Integer.toString(score);
     }
+
+
 }
