@@ -11,26 +11,14 @@ public abstract class Client  {
         this.balance = balance;
     }
 
-    public String getBalance (String account) {
+    public String getBalance (String account)
+    {
         return "Баланс: " + balance;
     }
 
-    public void setBalance (String account, int balance) {
-        this.balance = balance;
-    }
+    public abstract String addMoney (String account, int money);
 
-    public String addMoney (String account, int money)
-    {
-        balance += money;
+    public abstract String takeMoney (String account, int money);
 
-        return "Сумма пополнения расчетного счета №" + account + ": " + money;
-    }
-
-    public String takeMoney (String account, int money)
-    {
-        balance -= money;
-
-        return "Снимаемая сумма с расчетного счета №" + account + ": " + money;
-    }
 
 }
