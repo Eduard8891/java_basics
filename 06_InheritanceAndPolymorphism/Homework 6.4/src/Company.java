@@ -1,6 +1,4 @@
-import java.util.ArrayList;
-import java.util.Comparator;
-import java.util.TreeSet;
+import java.util.*;
 
 public class Company
 {
@@ -10,7 +8,9 @@ public class Company
     public static ArrayList<Integer> managers = new ArrayList<Integer>();
     public static ArrayList<Integer> operators = new ArrayList<Integer>();
     public static ArrayList<Integer> topManagers = new ArrayList<Integer>();
-    private TreeSet<Integer> allSalary = new TreeSet<>();
+    public static ArrayList <Integer> allSalary = new ArrayList<>();
+
+
 
 
 
@@ -49,6 +49,7 @@ public class Company
         allSalary.addAll(operators);
         allSalary.addAll(topManagers);
         allSalary.addAll(managers);
+        Collections.sort(allSalary);
 
         int countMin = 0;
         int countMax = 0;
@@ -56,7 +57,7 @@ public class Company
 
         System.out.println("30 самых маленьких зарплат:");
 
-        for (Integer go: allSalary)
+        for (int go: allSalary)
         {
             if (countMin == 30) {
                 break;
@@ -67,7 +68,7 @@ public class Company
         }
         System.out.println("15 самых больших зарплат:");
 
-        for (Integer go: allSalary)
+        for (int go: allSalary)
         {
             if (countMax > allSalary.size()-16) {
 
@@ -104,4 +105,5 @@ public class Company
     {
         function.getMonthSalary(function, index);
     }
+
 }
