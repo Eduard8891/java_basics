@@ -1,7 +1,8 @@
 public class Operator extends Function {
+    private int salaryO;
 
-    public Operator() {
-
+    public Operator()
+    {
     }
 
     public void hire(Function operator)
@@ -22,11 +23,16 @@ public class Operator extends Function {
         Company.operators.remove(index);
     }
 
+
     @Override
-    public void getMonthSalary(Function operator, int index)
-    {
-        int salary = Company.operators.get(index);
-        System.out.println(salary);
+    public int getMonthSalary(Function function, int index) {
+        salaryO = Company.managers.get(index);
+        return salaryO;
     }
 
+
+    public int salary()
+    {
+        return salaryO;
+    }
 }

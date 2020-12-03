@@ -1,5 +1,7 @@
 public interface Employee {
 
-    void getMonthSalary (Function function, int index);
 
+int getMonthSalary (Function function, int index);
+
+int salary();
 }

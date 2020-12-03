@@ -1,12 +1,15 @@
 public class Manager extends Function
 {
+    private int salaryM;
+    private int salary;
 
-    public Manager() {
+    public Manager()
+    {
     }
 
     public void hire(Function manager)
     {
-            int salary = (int) (25000 + 10000 * Math.random());
+             salary = (int) (25000 + 10000 * Math.random());
             Company.managers.add(salary);
     }
 
@@ -24,10 +27,15 @@ public class Manager extends Function
 
 
     @Override
-    public void getMonthSalary(Function manager, int index)
+    public int getMonthSalary(Function manager, int index)
     {
-        int salary = Company.managers.get(index);
-        System.out.println(salary);
+        int salaryM = Company.managers.get(index);
+        return salaryM;
+    }
+
+    public int salary()
+    {
+        return salaryM;
     }
 
 }

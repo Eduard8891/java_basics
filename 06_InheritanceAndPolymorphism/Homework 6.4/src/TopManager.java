@@ -1,6 +1,8 @@
 public class TopManager extends Function{
+    private int salaryT;
 
-    public TopManager() {
+    public TopManager()
+    {
 
     }
 
@@ -33,9 +35,15 @@ public class TopManager extends Function{
 
 
     @Override
-    public void getMonthSalary(Function topManager, int index)
+    public int getMonthSalary(Function topManager, int index)
     {
-        int salary = Company.topManagers.get(index);
+       salaryT = Company.topManagers.get(index);
+       return salaryT;
+    }
+
+    public int salary()
+    {
+        return salaryT;
     }
 
 }
