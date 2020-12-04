@@ -22,7 +22,7 @@ public class Company
             @Override
             public String toString() {
                 String ret = "Список " + this.size() + " самых низких зарплат\n";
-                for (int i = 0; i < this.size(); ret += i + 1 + ". " + this.get(i) + "\n", i++) ;
+                for (int i = 0; i < this.size(); ret += i + 1 + ". " + this.get(i).getMonthSalary() + "\n", i++) ;
                 return ret;
             }
         };
@@ -39,7 +39,7 @@ public class Company
             @Override
             public String toString() {
                 String ret = "Список " + this.size() + " самых высоких зарплат\n";
-                for (int i = 0; i < this.size(); ret += i + 1 + ". " + this.get(i) + "\n", i++) ;
+                for (int i = 0; i < this.size(); ret += i + 1 + ". " + this.get(i).getMonthSalary() + "\n", i++) ;
                 return ret;
             }
         };
