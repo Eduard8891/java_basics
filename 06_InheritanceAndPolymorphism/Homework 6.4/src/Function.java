@@ -1,7 +1,7 @@
 public abstract class Function implements Employee {
 
 
-    public Function()
+    public Function(int salary)
     {
 
     }
@@ -13,7 +13,7 @@ public abstract class Function implements Employee {
     public abstract void fire (Function function, int index);
 
     @Override
-    public abstract int getMonthSalary(Function function, int index);
+    public abstract int getMonthSalary();
 
-    public abstract int salary();
+
 }

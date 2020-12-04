@@ -1,22 +1,17 @@
 public class TopManager extends Function{
-    private int salaryT;
 
-    public TopManager()
+
+    public TopManager(int salary)
     {
+        super(salary);
 
     }
 
     public void hire(Function topManager)
     {
-        if(Company.income >= 10000000) {
-            int salary = (int) (100000 + 100000 * Math.random());
-            salary = salary + (salary/2);
-            Company.topManagers.add(salary);
-        }
-        else {
-            int salary = (int) (100000 + 100000 * Math.random());
-            Company.topManagers.add(salary);
-        }
+
+            Company.topManagers.add(new TopManager(getMonthSalary()));
+
     }
 
     public  void hireAll (Function torManager)
@@ -28,22 +23,25 @@ public class TopManager extends Function{
 
     public void  fire (Function topManager, int index)
     {
-        int salary = Company.topManagers.remove(index);
-        System.out.println(salary);
+        Company.topManagers.remove(index);
     }
 
 
 
     @Override
-    public int getMonthSalary(Function topManager, int index)
+    public int getMonthSalary()
     {
-       salaryT = Company.topManagers.get(index);
-       return salaryT;
+        int salary;
+        if(Company.income >= 10000000) {
+            salary = (int) (100000 + 100000 * Math.random());
+            salary = salary + (salary/2);
+        }
+        else {
+            salary = (int) (100000 + 100000 * Math.random());
+        }
+       return salary;
     }
 
-    public int salary()
-    {
-        return salaryT;
-    }
+
 
 }

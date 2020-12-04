@@ -7,9 +7,9 @@ public class Company
 
     protected static int income = (int)(80*(115000+25000*Math.random()));
 
-    public static ArrayList<Integer> managers = new ArrayList<>();
-    public static ArrayList<Integer> operators = new ArrayList<>();
-    public static ArrayList<Integer> topManagers = new ArrayList<>();
+    public static ArrayList<Manager> managers = new ArrayList<>();
+    public static ArrayList<Operator> operators = new ArrayList<>();
+    public static ArrayList<TopManager> topManagers = new ArrayList<>();
 
     public static ArrayList <Employee> allSalary = new ArrayList<>();
 
@@ -17,7 +17,7 @@ public class Company
 
         count = count > allSalary.size() ? allSalary.size() : count;
 
-        allSalary.sort(Comparator.comparing(Employee::salary));
+        allSalary.sort(Comparator.comparing(Employee::getMonthSalary));
 
         return new ArrayList<Employee>(allSalary.subList(0, count)){
             @Override
@@ -33,7 +33,7 @@ public class Company
 
         count = count > allSalary.size() ? allSalary.size() : count;
 
-        allSalary.sort((man1, man2) -> man2.salary().compareTo(man1.salary()));
+        allSalary.sort((man1, man2) -> man2.getMonthSalary().compareTo(man1.getMonthSalary()));
 
         return new ArrayList<Employee>(allSalary.subList(0, count)){
             @Override
@@ -95,9 +95,9 @@ public class Company
     }
 
 
-    public void getMonthSalary (Function function, int index)
+    public void getMonthSalary ()
     {
-        function.getMonthSalary(function, index);
+
     }
 
 }

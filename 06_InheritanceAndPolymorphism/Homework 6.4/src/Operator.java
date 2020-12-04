@@ -1,14 +1,14 @@
 public class Operator extends Function {
-    private int salaryO;
 
-    public Operator()
+
+    public Operator(int salary)
     {
+        super(salary);
     }
 
     public void hire(Function operator)
     {
-        int salary = (int) (15000 + 10000 * Math.random());
-        Company.operators.add(salary);
+        Company.operators.add(new Operator(getMonthSalary()));
     }
 
     public  void hireAll (Function operator)
@@ -25,14 +25,10 @@ public class Operator extends Function {
 
 
     @Override
-    public int getMonthSalary(Function function, int index) {
-        salaryO = Company.managers.get(index);
-        return salaryO;
+    public int getMonthSalary() {
+        int salary = (int) (15000 + 10000 * Math.random());
+        return salary;
     }
 
 
-    public int salary()
-    {
-        return salaryO;
-    }
 }

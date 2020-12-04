@@ -5,9 +5,9 @@ public class Main {
 
 
         Company company = new Company();
-        Function manager = new Manager();
-        Function operator = new Operator();
-        Function topManager = new TopManager();
+        Function manager = new Manager(5000);
+        Function operator = new Operator(5000);
+        Function topManager = new TopManager(50000);
 
         company.hireAll(manager);  //Нанять всех менеджеров
         company.hireAll(operator);  //Нанять всех операторов
@@ -18,7 +18,6 @@ public class Main {
         company.fireFiftyPercentOfAll(); //Уволить половину сотрудников
         System.out.println(Company.allSalary.size()); //Количество сотрудников
         company.getIncome();  //Доход компании
-        company.getMonthSalary(operator, 5); //Реализация getMonthSalary, з/п оператора с индексом 5
         System.out.println(company.getLowestSalaryStaff(20));
 
     }
