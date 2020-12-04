@@ -12,7 +12,7 @@ public class Manager extends Function
     {
 
         Manager man = new Manager(getMonthSalary());
-            Company.managers.add(man);
+            Company.allSalary.add(man);
     }
 
     public  void hireAll (Function manager)
@@ -24,7 +24,7 @@ public class Manager extends Function
 
     public void  fire (Function manager, int index)
     {
-        Company.managers.remove(index);
+        Company.allSalary.remove(index);
     }
 
 

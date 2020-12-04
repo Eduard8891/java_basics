@@ -19,6 +19,6 @@ public class Main {
         System.out.println(Company.allSalary.size()); //Количество сотрудников
         company.getIncome();  //Доход компании
         System.out.println(company.getLowestSalaryStaff(20));
-
+        System.out.println(company.getTopSalaryStaff(5));
     }
 }

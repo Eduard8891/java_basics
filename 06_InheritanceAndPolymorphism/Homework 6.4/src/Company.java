@@ -7,13 +7,12 @@ public class Company
 
     protected static int income = (int)(80*(115000+25000*Math.random()));
 
-    public static ArrayList<Manager> managers = new ArrayList<>();
-    public static ArrayList<Operator> operators = new ArrayList<>();
-    public static ArrayList<TopManager> topManagers = new ArrayList<>();
 
     public static ArrayList <Employee> allSalary = new ArrayList<>();
 
+
     public List<Employee> getLowestSalaryStaff(int count){
+
 
         count = count > allSalary.size() ? allSalary.size() : count;
 
@@ -31,9 +30,10 @@ public class Company
 
     public List<Employee> getTopSalaryStaff(int count){
 
-        count = count > allSalary.size() ? allSalary.size() : count;
+        count = Math.min(count, allSalary.size());
 
-        allSalary.sort((man1, man2) -> man2.getMonthSalary().compareTo(man1.getMonthSalary()));
+
+        allSalary.sort(Comparator.comparing((Employee employee) -> employee.getMonthSalary()).reversed());
 
         return new ArrayList<Employee>(allSalary.subList(0, count)){
             @Override
@@ -53,25 +53,11 @@ public class Company
 
     public void fireFiftyPercentOfAll ()
     {
-        for (int o = 1; o <= operators.size(); o++)
+        for (int o = 1; o <= allSalary.size(); o++)
         {
             if ((o % 2) == 0)
             {
-                 operators.remove(operators.size() - operators.size()/2);
-            }
-        }
-        for (int o = 1; o <= managers.size(); o++)
-        {
-            if ((o % 2) == 0)
-            {
-                managers.remove(managers.size() - managers.size()/2);
-            }
-        }
-        for (int o = 1; o <= topManagers.size(); o++)
-        {
-            if ((o % 2) == 0)
-            {
-                topManagers.remove(topManagers.size() - topManagers.size()/2);
+                allSalary.remove(allSalary.size() - allSalary.size()/2);
             }
         }
     }
@@ -97,7 +83,6 @@ public class Company
 
     public void getMonthSalary ()
     {
-
     }
 
 }

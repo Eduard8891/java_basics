@@ -8,7 +8,7 @@ public class Operator extends Function {
 
     public void hire(Function operator)
     {
-        Company.operators.add(new Operator(getMonthSalary()));
+        Company.allSalary.add(new Operator(getMonthSalary()));
     }
 
     public  void hireAll (Function operator)
@@ -20,7 +20,7 @@ public class Operator extends Function {
 
     public void  fire (Function operator, int index)
     {
-        Company.operators.remove(index);
+        Company.allSalary.remove(index);
     }
 
 

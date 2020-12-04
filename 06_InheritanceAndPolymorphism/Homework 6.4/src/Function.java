@@ -4,6 +4,7 @@ public abstract class Function implements Employee {
     public Function(int salary)
     {
 
+        getMonthSalary();
     }
 
     public abstract void hire (Function function);

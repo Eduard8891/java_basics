@@ -10,7 +10,7 @@ public class TopManager extends Function{
     public void hire(Function topManager)
     {
 
-            Company.topManagers.add(new TopManager(getMonthSalary()));
+            Company.allSalary.add(new TopManager(getMonthSalary()));
 
     }
 
@@ -23,7 +23,7 @@ public class TopManager extends Function{
 
     public void  fire (Function topManager, int index)
     {
-        Company.topManagers.remove(index);
+        Company.allSalary.remove(index);
     }
 
 
