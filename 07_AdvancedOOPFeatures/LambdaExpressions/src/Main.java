@@ -22,11 +22,12 @@ public class Main
         Date date = sdf.parse("01.01.2017");
 
 
-        staff.stream().max(Comparator.comparing(Employee::getSalary))
+        staff.stream().sorted(Comparator.comparing(Employee::getSalary))
                 .filter(e -> e.getWorkStart().after(date))
+                .max(Comparator.comparing(Employee::getSalary))
                 .ifPresent(System.out::println);
-
     }
+
 
     private static ArrayList<Employee> loadStaffFromFile()
     {
