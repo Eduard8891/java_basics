@@ -1,7 +1,10 @@
 import java.nio.file.Files;
 import java.nio.file.Paths;
+import java.text.DateFormat;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
+import java.time.Year;
+import java.time.YearMonth;
 import java.util.*;
 import java.util.stream.Stream;
 
@@ -10,16 +13,19 @@ public class Main
     private static String staffFile = "data/staff.txt";
     private static String dateFormat = "dd.MM.yyyy";
 
-    public static void main(String[] args) { 
+    public static void main(String[] args) throws ParseException {
         ArrayList<Employee> staff = loadStaffFromFile();
         Collections.sort(staff, Comparator.comparing(Employee::getSalary)
                 .thenComparing(Employee::getName));
 
+        SimpleDateFormat sdf = new SimpleDateFormat(dateFormat);
+        Date date = sdf.parse("01.01.2017");
 
-        for (Employee employee : staff)
-        {
-            System.out.println(employee);
-        }
+
+        staff.stream().max(Comparator.comparing(Employee::getSalary))
+                .filter(e -> e.getWorkStart().after(date))
+                .ifPresent(System.out::println);
+
     }
 
     private static ArrayList<Employee> loadStaffFromFile()
