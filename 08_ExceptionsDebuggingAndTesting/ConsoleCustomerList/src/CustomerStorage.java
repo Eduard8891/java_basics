@@ -9,10 +9,11 @@ public class CustomerStorage
         storage = new HashMap<>();
     }
 
-    public void addCustomer(String data)
+
+    public void addCustomer (String data)
     {
+        String[] components = data.split("\\s+");
         try {
-            String[] components = data.split("\\s+");
             if (components.length == 4) {
                 if (components[2].matches("^[A-Za-z0-9._%+-]+@[a-z0-9.-]+\\.[a-z]{2,6}$")) {
                     if (components[3].matches("[+]+[0-9]+")) {
@@ -21,9 +22,14 @@ public class CustomerStorage
                     }
                     else throw new IllegalArgumentException("You entered invalid phone number! Try again.");
                 } else throw new IllegalArgumentException("You entered invalid email! Try again.");
-            } else throw new IllegalArgumentException("You entered extra data! Try again.");
+            } else throw new MyException("You entered extra word count: ", components.length);
         } catch (RuntimeException ex) {
             System.out.println(ex.getMessage());
+        }
+        catch (MyException ex)
+        {
+            System.out.print(ex.getMessage());
+            System.out.println(ex.getLength());
         }
     }
 
