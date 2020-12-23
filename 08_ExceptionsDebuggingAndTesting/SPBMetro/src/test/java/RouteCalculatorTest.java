@@ -11,7 +11,6 @@ public class RouteCalculatorTest extends TestCase {
     List<Station> routeForCalculateDuration;
     List<Station> routeWithTwoConnection;
     List<Station> routeWithOneConnection;
-    List<Station> routeViaConnectedLine;
     List<Station> routeOnTheLine;
     List<Station> connection1;
     List<Station> connection2;
@@ -24,7 +23,6 @@ public class RouteCalculatorTest extends TestCase {
         routeForCalculateDuration = new ArrayList<>();
         routeWithTwoConnection = new ArrayList<>();
         routeWithOneConnection = new ArrayList<>();
-        routeViaConnectedLine = new ArrayList<>();
         routeOnTheLine = new ArrayList<>();
         connection1 = new ArrayList<>();
         connection2 = new ArrayList<>();
@@ -99,7 +97,6 @@ public class RouteCalculatorTest extends TestCase {
         connection4.add(horizontal6);
         connection4.add(right5);
 
-
         stationIndex.addConnection(connection1);
         stationIndex.addConnection(connection2);
         stationIndex.addConnection(connection3);
@@ -108,8 +105,6 @@ public class RouteCalculatorTest extends TestCase {
         stationIndex.getConnectedStations(left5);
         stationIndex.getConnectedStations(right5);
         stationIndex.getConnectedStations(horizontal6);
-
-
 
         routeForCalculateDuration.add(left1);
         routeForCalculateDuration.add(left2);
@@ -123,20 +118,13 @@ public class RouteCalculatorTest extends TestCase {
         routeOnTheLine.add(left4);
         routeOnTheLine.add(left5);
 
-        routeViaConnectedLine.add(right1);
-        routeViaConnectedLine.add(right2);
-        routeViaConnectedLine.add(right3);
-
-
-
         routeWithOneConnection.add(left1);
         routeWithOneConnection.add(left2);
         routeWithOneConnection.add(horizontal3);
         routeWithOneConnection.add(horizontal2);
 
-        routeWithTwoConnection.add(right5);
-        routeWithTwoConnection.add(horizontal6);
-        routeWithTwoConnection.add(horizontal5);
+        routeWithTwoConnection.add(right3);
+        routeWithTwoConnection.add(right2);
         routeWithTwoConnection.add(horizontal4);
         routeWithTwoConnection.add(horizontal3);
         routeWithTwoConnection.add(horizontal2);
@@ -163,16 +151,6 @@ public class RouteCalculatorTest extends TestCase {
         assertEquals(expected, actual);
     }
 
-    public void testGetRouteViaConnectedLine()
-    {
-        Station from = stationIndex.getStation("right0", 2);
-        Station to = stationIndex.getStation("right3", 2);
-        RouteCalculator calculator = new RouteCalculator(stationIndex);
-        List <Station> actual = calculator.getShortestRoute(from, to);
-        List <Station> expected = routeViaConnectedLine.subList(0,4);
-        assertEquals(expected, actual);
-    }
-
     public void testGetRouteWithOneConnection()
     {
         Station from = stationIndex.getStation("left1", 1);
@@ -183,13 +161,13 @@ public class RouteCalculatorTest extends TestCase {
         assertEquals(expected, actual);
     }
 
-    public void testGetRouteWithTwoConnection()
+    public void testGetRouteWithTwoConnectionAndVia()
     {
-        Station from = stationIndex.getStation("right5", 2);
+        Station from = stationIndex.getStation("right3", 2);
         Station to = stationIndex.getStation("left5", 1);
         RouteCalculator calculator = new RouteCalculator(stationIndex);
         List <Station> actual = calculator.getShortestRoute(from, to);
-        List <Station> expected = routeWithTwoConnection.subList(0,8);
+        List <Station> expected = routeWithTwoConnection.subList(0,7);
         assertEquals(expected, actual);
     }
 
