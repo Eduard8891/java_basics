@@ -1,5 +1,7 @@
 import core.Line;
 import core.Station;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;
@@ -12,28 +14,41 @@ import java.util.Scanner;
 
 public class Main
 {
+    private static Logger loggerInfo;
+    private static Logger loggerWarn;
+    private static Logger loggerError;
+
     private static String dataFile = "src/main/resources/map.json";
     private static Scanner scanner;
 
     private static StationIndex stationIndex;
-
     public static void main(String[] args)
     {
         RouteCalculator calculator = getRouteCalculator();
+        loggerError = LogManager.getLogger();
 
         System.out.println("Программа расчёта маршрутов метрополитена Санкт-Петербурга\n");
         scanner = new Scanner(System.in);
         for(;;)
         {
-            Station from = takeStation("Введите станцию отправления:");
-            Station to = takeStation("Введите станцию назначения:");
+            try {
 
-            List<Station> route = calculator.getShortestRoute(from, to);
-            System.out.println("Маршрут:");
-            printRoute(route);
+                Station from = takeStation("Введите станцию отправления:");
+                Station to = takeStation("Введите станцию назначения:");
 
-            System.out.println("Длительность: " +
-                RouteCalculator.calculateDuration(route) + " минут");
+                loggerInfo.info(from.getName()+" "+to.getName());
+
+                List<Station> route = calculator.getShortestRoute(from, to);
+                System.out.println("Маршрут:");
+                printRoute(route);
+
+                System.out.println("Длительность: " +
+                        RouteCalculator.calculateDuration(route) + " минут");
+            } catch (Error ex)
+            {
+                System.err.println(ex);
+                loggerError.error(ex);
+            }
         }
     }
 
@@ -69,11 +84,15 @@ public class Main
         {
             System.out.println(message);
             String line = scanner.nextLine().trim();
+            loggerInfo = LogManager.getLogger();
+            loggerInfo.info(line);
             Station station = stationIndex.getStation(line);
             if(station != null) {
                 return station;
             }
             System.out.println("Станция не найдена :(");
+            loggerWarn = LogManager.getLogger();
+            loggerWarn.warn("Станция не найдена: "+line);
         }
     }
 
