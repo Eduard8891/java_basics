@@ -2,6 +2,10 @@ import core.Line;
 import core.Station;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.Marker;
+import org.apache.logging.log4j.MarkerManager;
+import org.apache.logging.log4j.core.Filter;
+import org.apache.logging.log4j.core.filter.MarkerFilter;
 import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;
@@ -14,9 +18,12 @@ import java.util.Scanner;
 
 public class Main
 {
-    private static Logger loggerInfo;
-    private static Logger loggerWarn;
-    private static Logger loggerError;
+    private static final Logger LOGGER = LogManager.getLogger(Main.class);
+    private static final Marker INPUT_HISTORY = MarkerManager.getMarker("INPUT_HISTORY");
+    private static final Marker WARNINGS = MarkerManager.getMarker("WARNINGS");
+    private static final Marker ERRORS = MarkerManager.getMarker("ERRORS");
+
+
 
     private static String dataFile = "src/main/resources/map.json";
     private static Scanner scanner;
@@ -24,8 +31,8 @@ public class Main
     private static StationIndex stationIndex;
     public static void main(String[] args)
     {
+
         RouteCalculator calculator = getRouteCalculator();
-        loggerError = LogManager.getLogger();
 
         System.out.println("Программа расчёта маршрутов метрополитена Санкт-Петербурга\n");
         scanner = new Scanner(System.in);
@@ -35,9 +42,6 @@ public class Main
 
                 Station from = takeStation("Введите станцию отправления:");
                 Station to = takeStation("Введите станцию назначения:");
-
-                loggerInfo.info(from.getName()+" "+to.getName());
-
                 List<Station> route = calculator.getShortestRoute(from, to);
                 System.out.println("Маршрут:");
                 printRoute(route);
@@ -47,7 +51,8 @@ public class Main
             } catch (Error ex)
             {
                 System.err.println(ex);
-                loggerError.error(ex);
+                LOGGER.traceEntry();
+                LOGGER.error(ERRORS,"Ошибка выполнения: ", ex);
             }
         }
     }
@@ -84,15 +89,17 @@ public class Main
         {
             System.out.println(message);
             String line = scanner.nextLine().trim();
-            loggerInfo = LogManager.getLogger();
-            loggerInfo.info(line);
+            LOGGER.traceEntry();
+            LOGGER.info(INPUT_HISTORY, "Пользователь ввел станцию: {}", line);
+
             Station station = stationIndex.getStation(line);
             if(station != null) {
                 return station;
             }
             System.out.println("Станция не найдена :(");
-            loggerWarn = LogManager.getLogger();
-            loggerWarn.warn("Станция не найдена: "+line);
+
+            LOGGER.traceEntry();
+            LOGGER.warn(WARNINGS, "Станция не найдена: {}", line);
         }
     }
 
