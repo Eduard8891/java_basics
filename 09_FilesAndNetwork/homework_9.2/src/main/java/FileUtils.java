@@ -1,35 +1,26 @@
 import com.puppycrawl.tools.checkstyle.Main;
 
-import java.io.File;
-import java.io.IOException;
+import java.io.*;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
+import java.nio.file.StandardCopyOption;
 
 
 public class FileUtils {
 
 
     public static void copyFolder(String sourceDirectory, String destinationDirectory) throws IOException {
-        File source = new File(sourceDirectory);
-        File dest = new File(destinationDirectory);
-        copyFiles(source, dest);
+        copyFiles(Paths.get(sourceDirectory), Paths.get(destinationDirectory));
     }
 
-
-
-
-
-    public static void copyFiles (File source, File dest) throws IOException {
-
-        Files.copy(source.toPath(), dest.toPath());
-
-        if (source.isDirectory()) {
-            File []files = source.listFiles();
-            for (File s : files) {
-                Files.copy(s.toPath(), dest.toPath());
-                if (s.isFile()) dest = new File(dest.toPath()+"/"+s.getName());
-            }
+    public static void copyFiles (Path source, Path dest) throws IOException {
+        File [] files = new File(String.valueOf(source)).listFiles();
+        Files.copy(source, dest);
+        for (File f: files) {
+            if (f.isDirectory()) copyFiles(f.toPath(), Path.of(dest+"/"+f.getName()));
+            Files.copy(f.toPath(), Path.of(dest+"/"+f.getName()));
         }
     }
 }
+
