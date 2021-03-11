@@ -19,7 +19,7 @@ public class FileUtils {
         Files.copy(source, dest);
         for (File f: files) {
             if (f.isDirectory()) copyFiles(f.toPath(), Path.of(dest+"/"+f.getName()));
-            Files.copy(f.toPath(), Path.of(dest+"/"+f.getName()));
+            else Files.copy(f.toPath(), Path.of(dest+"/"+f.getName()));
         }
     }
 }
