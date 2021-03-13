@@ -1,6 +1,8 @@
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
+import java.io.IOException;
+
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 @DisplayName("Файл test/resources/movementListFloat.csv (значения прихода/расхода не целые")
@@ -11,13 +13,13 @@ public class TestMovementListFloat {
 
     @Test
     @DisplayName("Сумма прихода")
-    void testSumIncome() {
+    void testSumIncome() throws IOException {
         assertEquals(1500.5, new Movements(getCsvFilenamePath()).getIncomeSum(), DELTA);
     }
 
     @Test
     @DisplayName("Сумма расходов")
-    void testSumExpense() {
+    void testSumExpense() throws IOException {
         assertEquals(300.03, new Movements(getCsvFilenamePath()).getExpenseSum(), DELTA);
     }
 
