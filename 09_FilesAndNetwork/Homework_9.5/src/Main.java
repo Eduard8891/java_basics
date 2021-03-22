@@ -4,8 +4,6 @@ import org.json.simple.parser.JSONParser;
 import org.json.simple.parser.ParseException;
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
-import org.jsoup.nodes.Element;
-import org.jsoup.select.Elements;
 import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
@@ -18,7 +16,7 @@ public class Main {
     static HashMap <String, String> colors = new HashMap<>();
     private static String jsonPath = "src/map.json";
     static {
-    putColor();
+    Parsing.putColor();
     }
     static ArrayList <Station> stations = new ArrayList<>();
     static ArrayList <Line> lines = new ArrayList<>();
@@ -29,8 +27,9 @@ public class Main {
 
         String filePath = parseFile("src/metro.html");
         Document document = Jsoup.parse(filePath);
-        parseLine(document);
-        parseStation(document);
+        Parsing.parseLine(document);
+        Parsing.parseStation(document);
+//        Parsing.parseConnections(document);
         createGSonFile();
         parseJson();
     }
@@ -84,76 +83,11 @@ public class Main {
         writer.flush();
     }
 
-    public static void parseLine(Document document) {
-        Elements elements = document.select("td");
-        String temp = "";
-        for (Element i: elements) {
-            if (!i.attr("style").isEmpty() & !i.attr("data-sort-value").isEmpty()) {
-                String numLine = i.toString().replaceAll("\\D", " ").substring(90, 100).trim();
-                String lineName = i.select("span").attr("title");
-                if (!temp.equals(lineName)) {
-                    lines.add(new Line(Integer.parseInt(numLine), lineName, getColor(lineName)));
-                    temp = lineName;
-                }
-            }
-        }
-    }
-
-    public static void parseStation(Document document) {
-        Elements elements = document.select("a");
-        String temp = "";
-        int index = 0;
-        for (Element i: elements) {
-            if (!i.attr("title").isEmpty()) {
-                String line = i.attr("title");
-                if (line.contains("линия") | line.contains("станция")) {
-                    if (line.contains("монорельса")) break;
-                    if (line.contains("станция метро")) {
-                        for (int a = 0; a < line.length(); a++) {
-                            if (line.charAt(a) == '(') {
-                                String nameSt = line.substring(0, a-1);
-                                stations.add(new Station(nameSt, lines.get(index)));
-                            }
-                        }
-                    }
-                    if (line.contains("линия") & !line.equals(temp) & !line.contains("станция")) {
-                        temp = line;
-                        for (int b = 0; b < lines.size(); b++)
-                            if (lines.get(b).getName().equals(temp)) index = b;
-                    }
-                }
-            }
-        }
-    }
 
     public static String parseFile(String filePath) throws IOException {
         StringBuilder sb = new StringBuilder();
         List<String> list = Files.readAllLines(Path.of(filePath));
         list.forEach(line -> sb.append(line).append("\n"));
         return sb.toString();
-    }
-
-    public static String getColor(String line) {
-        for (Map.Entry i: colors.entrySet()) {
-            if (line.equals(i.getKey())) return i.getValue().toString();
-        }
-        return null;
-    }
-
-    public static void putColor() {
-        colors.put("Сокольническая линия", "Красный");
-        colors.put("Замоскворецкая линия", "Зеленый");
-        colors.put("Арбатско-Покровская линия", "Синий");
-        colors.put("Филёвская линия", "Голубой");
-        colors.put("Кольцевая линия", "Коричневый");
-        colors.put("Калужско-Рижская линия", "Оранжевый");
-        colors.put("Таганско-Краснопресненская линия", "Фиолетовый");
-        colors.put("Солнцевская линия", "Желтый");
-        colors.put("Калининская линия", "Желтый");
-        colors.put("Серпуховско-Тимирязевская линия", "Серый");
-        colors.put("Люблинско-Дмитровская линия", "Салатовый");
-        colors.put("Большая кольцевая линия", "Бирюзовый");
-        colors.put("Бутовская линия", "Серо-голубой");
-        colors.put("Некрасовская линия", "Розовый");
     }
 }
