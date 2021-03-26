@@ -21,7 +21,8 @@ public class Main {
     static ArrayList <Station> stations = new ArrayList<>();
     static ArrayList <Line> lines = new ArrayList<>();
     static ArrayList <Connection> connections = new ArrayList<>();
-    static HashMap <String, String> st = new HashMap<>();
+    static JSONArray connectFinish = new JSONArray();
+
 
     public static void main(String[] args) throws IOException, ParseException {
 
@@ -29,7 +30,7 @@ public class Main {
         Document document = Jsoup.parse(filePath);
         Parsing.parseLine(document);
         Parsing.parseStation(document);
-//        Parsing.parseConnections(document);
+        Parsing.parseConnections(document);
         createGSonFile();
         parseJson();
     }
@@ -77,6 +78,38 @@ public class Main {
             generalObject.put("Lines", jArrayLines);
         }
         generalObject.put("stations", stationsOnLine);
+
+
+        Object temp = null;
+        JSONObject obj;
+        JSONArray array = null;
+        for (Connection c : connections) {
+            if (!c.getStationFrom().equals(temp)) {
+                connectFinish.add(array);
+                array = new JSONArray();
+                obj = new JSONObject();
+                obj.put("Line: ", c.getLineFrom().getName());
+                obj.put("Station: ", c.getStationFrom().getName());
+                array.add(obj);
+                obj = new JSONObject();
+                obj.put("Line: ", c.getLineTo().getName());
+                obj.put("Station: ", c.getStationTo().getName());
+                array.add(obj);
+
+            }
+            else if (!array.contains(c.getStationTo())) {
+                obj = new JSONObject();
+                obj.put("Line: ", c.getLineTo().getName());
+                obj.put("Station: ", c.getStationTo().getName());
+                array.add(obj);
+            }
+            temp = c.getStationFrom();
+        }
+        connectFinish.remove(0);
+        generalObject.put("connections", connectFinish);
+
+
+
 
         FileWriter writer = new FileWriter(jsonPath);
         writer.write(generalObject.toString());

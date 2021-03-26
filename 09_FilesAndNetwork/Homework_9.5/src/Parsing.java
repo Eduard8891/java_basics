@@ -1,26 +1,75 @@
 import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
-import org.jsoup.nodes.Node;
 import org.jsoup.select.Elements;
-
-import java.sql.SQLOutput;
 import java.util.Map;
-import java.util.regex.Matcher;
-import java.util.regex.Pattern;
-
 public class Parsing {
 
-    public static void parseConnections(Document document) {
-        Elements elements = document.select("a");
-        for (Element element: elements) {
-            String line = element.attr("title");
-            if (!element.attr("title").isEmpty()) {
-                if (line.contains("линия") | line.contains("станция") | line.contains("Переход")) {
-//                    if (line.contains("станция монорельса")) break;
-                    System.out.println(line);
-                }
+    public static void parseConnections(Document document)  {
+        Elements elements = document.select("span");
+        String line1 = "";
+        String temp = "";
+        String line2 = "";
+        String line3 = "";
+        int count = 0;
+        for (Element i: elements) {
+            String line = i.select("a").attr("title");
+            if (!line.isEmpty()) {
+                    if (line.contains("Переход") & !line3.equals(line)) {
+                        line3 = line.substring(19);
+                        if (line3.contains("линии")) line3 = line3.substring(0, line3.length()-6);
+                        for (Line l: Main.lines) {
+                            if (l.getName().contains(line1)) {
+                                for (Station s: Main.stations) {
+                                    if (s.getName().equals(line2))
+                                        if (stationReturn(line3) != null & lineReturn(line3) != null)
+                                    Main.connections.add(new Connection(l, s, lineReturn(line3), stationReturn(line3)));
+                                }
+                            }
+                        }
+                    }
+                    if (Main.colors.containsKey(line) & count == 0) {
+                        line1 = line;
+                        count = 5;
+                    }
+                    else if (count == 5) {
+                        temp = line;
+                        count = 0;
+                        if (temp.contains("(")) {
+                            for (int a = 0; a < temp.length(); a++) {
+                                if (temp.charAt(a) == '(') {
+                                    line2 = temp.substring(0, a - 1);
+                                }
+                            }
+                        }
+                    }
+            }
+            if (line.contains("Некрасовка (станция метро)")) break;
+        }
+    }
+
+    public static Station stationReturn(String stationName) {
+        for (Station station: Main.stations) {
+            if (stationName.contains(station.getName()))
+                return station;
+
+        }
+        return null;
+    }
+
+    public static Line lineReturn(String lineName) {
+        if (lineName.contains("Большой кольцевой") | lineName.contains("Большая кольцевой")) return Main.lines.get(11);
+        if (lineName.contains("кольца")) return Main.lines.get(14);
+        if (lineName.contains("монорельса")) return Main.lines.get(13);
+        else {
+            String [] split = lineName.split(" ");
+            for (Line line: Main.lines) {
+                String lineStart = line.getName().substring(0, 5);
+                String input = split[split.length-1].substring(0, 5);
+                if (lineStart.equals(input))
+                return line;
             }
         }
+        return null;
     }
 
     public static void parseStation(Document document) {
