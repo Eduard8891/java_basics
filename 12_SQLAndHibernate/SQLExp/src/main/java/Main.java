@@ -1,10 +1,46 @@
+import org.hibernate.Session;
+import org.hibernate.SessionFactory;
+import org.hibernate.boot.Metadata;
+import org.hibernate.boot.MetadataSources;
+import org.hibernate.boot.registry.StandardServiceRegistry;
+import org.hibernate.boot.registry.StandardServiceRegistryBuilder;
 import java.sql.*;
-import java.util.HashMap;
-import java.util.Map;
+
 
 public class Main {
+    static SessionFactory sessionFactory;
 
     public static void main(String[] args) {
+        sessionFactoryMethod();
+        courses();
+        teachers();
+        sessionFactory.close();
+    }
+
+
+    public static void teachers() {
+        Session session = sessionFactory.openSession();
+        Teachers teachers = session.get(Teachers.class, 1);
+        System.out.println(teachers.getName());
+    }
+
+    public static void courses() {
+        Session session = sessionFactory.openSession();
+        Courses courses = session.get(Courses.class, 1);
+        System.out.println(courses.getName());
+    }
+
+    public static void sessionFactoryMethod() {
+        StandardServiceRegistry registry = new StandardServiceRegistryBuilder()
+                        .configure("hibernate.cfg.xml").build();
+        Metadata metadata = new MetadataSources(registry).getMetadataBuilder().build();
+        sessionFactory = metadata.getSessionFactoryBuilder().build();
+    }
+
+
+
+
+    public static void homework1() {
         String url = "jdbc:mysql://localhost:3306/skillbox";
         String user = "root";
         String pass = "testtest";
