@@ -1,51 +1,18 @@
-import lombok.EqualsAndHashCode;
-import lombok.Getter;
-import lombok.Setter;
-import lombok.ToString;
-
+import lombok.*;
 import javax.persistence.*;
 import java.io.Serializable;
 import java.util.Date;
-
 @Entity
+@Getter
+@Setter
 @Table(name  = "purchaselist")
 public class PurchaseList {
-
-    @EmbeddedId
-    private PurchaseListId key;
-    @Getter
-    @Setter
-    @OneToOne(cascade = CascadeType.ALL, fetch = FetchType.LAZY)
-    @JoinColumn(name = "student_name", insertable = false, updatable = false)
-    private Student student;
-    @Getter
-    @Setter
-    @OneToOne(cascade = CascadeType.ALL, fetch = FetchType.LAZY)
-    @JoinColumn(name = "course_name", insertable = false, updatable = false)
-    private Course course;
-    @Getter
-    @Setter
-    private int price;
-    @Getter
-    @Setter
+    @Column(name = "student_name")
+    String studentName;
+    @Column(name = "course_name")
+    String courseName;
+    private Integer price;
+    @Id
     @Column(name = "subscription_date")
     private Date subscriptionDate;
-
-    @EqualsAndHashCode
-    @ToString
-    @Embeddable
-    public static class PurchaseListId implements Serializable {
-        static final long serialVersionUID = 1L;
-        @Getter
-        @OneToOne(cascade = CascadeType.ALL, fetch = FetchType.LAZY)
-        Student student;
-        @Getter
-        @OneToOne(cascade = CascadeType.ALL, fetch = FetchType.LAZY)
-        Course course;
-        public PurchaseListId() {}
-        public PurchaseListId(Student student, Course course) {
-            this.student = student;
-            this.course = course;
-        }
-    }
 }

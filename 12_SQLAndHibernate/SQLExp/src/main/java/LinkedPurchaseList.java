@@ -1,33 +1,31 @@
-import lombok.EqualsAndHashCode;
-import lombok.Getter;
-import lombok.Setter;
-import lombok.ToString;
-
-import javax.persistence.Column;
-import javax.persistence.Embeddable;
-import javax.persistence.Entity;
-import javax.persistence.Id;
+import lombok.*;
+import javax.persistence.*;
 import java.io.Serializable;
 
+@AllArgsConstructor
+@Getter
+@Setter
 @Entity
+@Table(name  = "linked_purchaselist")
 public class LinkedPurchaseList {
-
-    private LinkedPurchaseListKey key;
+    @EmbeddedId
+    private LinkedPurchaseListId key;
+    @Column(name = "student_id", insertable = false, updatable = false)
     private int studentId;
+    @Column(name = "course_id", insertable = false, updatable = false)
     private int courseId;
 
+    @Data
+    @NoArgsConstructor
+    @AllArgsConstructor
+    @Getter
+    @Setter
     @EqualsAndHashCode
     @ToString
-    @Embeddable
-    public static class LinkedPurchaseListKey implements Serializable {
-        @Getter
-        @Setter
-        @Column(name  = "student_name")
-        private String studentName;
-
-        @Getter
-        @Setter
-        @Column(name  = "course_name")
-        private String courseName;
+    public static class LinkedPurchaseListId implements Serializable {
+        @ManyToOne
+        private Student student;
+        @ManyToOne
+        private Course course;
     }
 }

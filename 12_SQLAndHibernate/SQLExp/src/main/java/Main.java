@@ -5,20 +5,51 @@ import org.hibernate.boot.MetadataSources;
 import org.hibernate.boot.registry.StandardServiceRegistry;
 import org.hibernate.boot.registry.StandardServiceRegistryBuilder;
 
+import java.util.ArrayList;
+import java.util.List;
+
 
 public class Main {
     static SessionFactory sessionFactory;
+    static ArrayList<String> purchaseList = new ArrayList<>();
+    static ArrayList<String> studentsList = new ArrayList<>();
+    static ArrayList<String> coursesList = new ArrayList<>();
 
     public static void main(String[] args) {
+
         sessionFactoryMethod();
-
-
-        purchaseList();
-
-
+        getStudentsAndCourses();
+        createTable();
         sessionFactory.close();
     }
 
+    public static void createTable() {
+        Session s = sessionFactory.getCurrentSession();
+        s.beginTransaction();
+        s.createNativeQuery("TRUNCATE TABLE LinkedPurchaseList;").executeUpdate();
+        for (String line1: purchaseList) {
+            String[] linePurchaseList = line1.split(",");
+            for (String line2: studentsList) {
+                String[] lineStudents = line2.split(",");
+                if (lineStudents[1].equals(linePurchaseList[0])) {
+                    for (String line3: coursesList) {
+                        String[] lineCourses = line3.split(",");
+                        if (linePurchaseList[1].equals(lineCourses[1])) {
+                            int idStudent = Integer.parseInt(lineStudents[0]);
+                            int idCourse = Integer.parseInt(lineCourses[0]);
+                            LinkedPurchaseList.LinkedPurchaseListId key =
+                                    new LinkedPurchaseList
+                                            .LinkedPurchaseListId
+                                            (s.get(Student.class, idStudent), s.get(Course.class, idCourse));
+                            LinkedPurchaseList obj = new LinkedPurchaseList(key, idStudent, idCourse);
+                            s.save(obj);
+                        }
+                    }
+                }
+            }
+        }
+        s.getTransaction().commit();
+    }
 
     public static void teachers() {
         Session session = sessionFactory.openSession();
@@ -50,19 +81,28 @@ public class Main {
         session.close();
     }
 
-    public static void purchaseList() {
-        Session session = sessionFactory.openSession();
-        session.beginTransaction();
-        Student s = session.get(Student.class, 84);
-        Course c = session.get(Course.class, 3);
-        PurchaseList.PurchaseListId key = new PurchaseList.PurchaseListId(s,c);
-        session.getTransaction().commit();
-        PurchaseList purchaseList = session.get(PurchaseList.class, key);
+    public static void getStudentsAndCourses() {
+        Session s = sessionFactory.getCurrentSession();
+        s.beginTransaction();
+        List<PurchaseList> list = s.createQuery("FROM PurchaseList").getResultList();
+        for (PurchaseList p: list) {
+            purchaseList.add(p.getStudentName()+","+p.getCourseName());
+        }
 
-        System.out.println(purchaseList.getStudent().getName()+" - "+purchaseList.getCourse().getName());
-        session.close();
+        List<Student> list2 = s.createQuery("FROM Student").getResultList();
+        for (Student stud: list2) {
+            if (!studentsList.contains(String.valueOf(stud.getId())+","+stud.getName()))
+                studentsList.add(String.valueOf(stud.getId())+","+stud.getName());
+        }
+
+        List<Course> list3 = s.createQuery("FROM Course").getResultList();
+        for (Course cour: list3) {
+            if (!coursesList.contains(String.valueOf(cour.getId()) + "," + cour.getName())) {
+                coursesList.add(String.valueOf(cour.getId()) + "," + cour.getName());
+            }
+        }
+        s.close();
     }
-
 
     public static void sessionFactoryMethod() {
         StandardServiceRegistry registry = new StandardServiceRegistryBuilder()
