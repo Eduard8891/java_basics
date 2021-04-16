@@ -20,13 +20,15 @@ public class Main {
         sessionFactoryMethod();
         getStudentsAndCourses();
         createTable();
+
+
         sessionFactory.close();
     }
 
     public static void createTable() {
         Session s = sessionFactory.getCurrentSession();
         s.beginTransaction();
-        s.createNativeQuery("TRUNCATE TABLE LinkedPurchaseList;").executeUpdate();
+//        s.createNativeQuery("TRUNCATE TABLE LinkedPurchaseList;").executeUpdate();
         for (String line1: purchaseList) {
             String[] linePurchaseList = line1.split(",");
             for (String line2: studentsList) {
