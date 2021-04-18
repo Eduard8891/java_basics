@@ -16,10 +16,15 @@ public class Main {
     static ArrayList<String> coursesList = new ArrayList<>();
 
     public static void main(String[] args) {
-
         sessionFactoryMethod();
+
+
         getStudentsAndCourses();
         createTable();
+
+
+students();
+
 
 
         sessionFactory.close();
@@ -61,9 +66,8 @@ public class Main {
 
     public static void students() {
         Session session = sessionFactory.openSession();
-        Student student = session.get(Student.class, 1);
-        System.out.println(student.getName());
-        for(Course course: student.getCourses()) System.out.println(course.getName()+" - "+student.getName());
+        Student student = session.get(Student.class, 5);
+        for(Subscription subscription: student.getSubscriptions()) System.out.println(subscription.getCourse().getName()+" - "+student.getName());
     }
 
     public static void courses() {

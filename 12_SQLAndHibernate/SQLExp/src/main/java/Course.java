@@ -24,6 +24,12 @@ public class Course {
     private int price;
     @Column(name = "price_per_hour")
     private float pricePerHour;
+    @OneToMany
+    @JoinColumn(name = "course_id")
+    private List <Subscription> subscriptions;
+    @OneToMany
+    @JoinColumn(name = "course_name")
+    private List <PurchaseList> purchaseLists;
 
     @ManyToMany(cascade = CascadeType.ALL)
     @JoinTable(name = "subscriptions", joinColumns = {@JoinColumn(name = "course_id")},

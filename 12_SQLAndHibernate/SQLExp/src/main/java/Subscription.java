@@ -10,10 +10,10 @@ import java.util.Date;
 public class Subscription {
     @EmbeddedId
     private SubscriptionId key;
-    @OneToOne(cascade = CascadeType.ALL, fetch = FetchType.LAZY)
+    @ManyToOne(cascade = CascadeType.ALL, fetch = FetchType.LAZY)
     @JoinColumn(name = "student_id", insertable = false, updatable = false)
     private Student student;
-    @OneToOne(cascade = CascadeType.ALL, fetch = FetchType.LAZY)
+    @ManyToOne(cascade = CascadeType.ALL, fetch = FetchType.LAZY)
     @JoinColumn(name = "course_id", insertable = false, updatable = false)
     private Course course;
     @Column(name  = "subscription_date")
@@ -27,10 +27,10 @@ public class Subscription {
     @Embeddable
     public static class SubscriptionId implements Serializable {
         static final long serialVersionUID = 1L;
-        @OneToOne(cascade = CascadeType.ALL, fetch = FetchType.LAZY)
+        @ManyToOne(cascade = CascadeType.ALL, fetch = FetchType.LAZY)
         @JoinColumn(name = "student_id", insertable = false, updatable = false)
         private Student student;
-        @OneToOne(cascade = CascadeType.ALL, fetch = FetchType.LAZY)
+        @ManyToOne(cascade = CascadeType.ALL, fetch = FetchType.LAZY)
         @JoinColumn(name = "course_id", insertable = false, updatable = false)
         private Course course;
     }
