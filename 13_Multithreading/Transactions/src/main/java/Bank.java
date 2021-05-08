@@ -1,8 +1,12 @@
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Random;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
 public class Bank {
+
+  Logger logger = LogManager.getLogger();
 
   private int count;
 
@@ -15,12 +19,16 @@ public class Bank {
     return accounts;
   }
 
-  private Map<String, Account> accounts = new HashMap<>();
+  private volatile Map<String, Account> accounts = new HashMap<>();
   private Map<String, Account> banned = new HashMap<>();
   private final Random random = new Random();
 
   public synchronized boolean isFraud(String fromAccountNum, String toAccountNum, long amount)
       throws InterruptedException {
+    if (banned.containsKey(fromAccountNum) || banned.containsKey(toAccountNum)) {
+      logger.error("This operation is not possible because one of the accounts has been banned!");
+      return false;
+    }
     Thread.sleep(1000);
     return random.nextBoolean();
   }
@@ -43,7 +51,7 @@ public class Bank {
               banned.put(toAccountNum, to);
               accounts.remove(fromAccountNum);
               accounts.remove(toAccountNum);
-              System.out.println("Accounts with accNumbers : "
+              logger.info("Accounts with accNumbers: "
                   + fromAccountNum + " and " + toAccountNum + " was banned!");
               return;
             }
@@ -53,7 +61,7 @@ public class Bank {
         }
         from.setMoney(from.getMoney() - amount);
         to.setMoney(to.getMoney() + amount);
-        System.out.println("Transaction from " + fromAccountNum + " to "
+        logger.info("Transaction from " + fromAccountNum + " to "
             + toAccountNum + " in the amount of " + amount + " was completed!");
       }
     }
@@ -73,11 +81,11 @@ public class Bank {
 
   private void generateAccounts(int count) {
     for (int i = 0; i < count; i++) {
-      String accNumber = String.valueOf(1326598 * Math.random()).replace(".", "");
-      accNumber = "ac" + accNumber;
+      String accNumber = "ac" + "-" + i;
       String money = String.valueOf(1000 * Math.random()).replace(".", "");
       long accMoney = Integer.parseInt(money.substring(0, 6));
       accounts.put(accNumber, new Account(accMoney, accNumber));
     }
+    logger.info("A list of " + count + " accounts has been generated.");
   }
 }
