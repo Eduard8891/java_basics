@@ -96,10 +96,10 @@ public class ParseUrl extends RecursiveAction {
           task.fork();
           logger.info(task + " is branched.");
           taskList.add(task);
-          for (ParseUrl parseUrl : taskList) {
-            parseUrl.join();
-          }
         }
+      }
+      for (ParseUrl parseUrl : taskList) {
+        parseUrl.join();
       }
     }
   }
