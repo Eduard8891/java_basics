@@ -1,296 +1,266 @@
-
-	https://skillbox.ru/company/
-	https://skillbox.ru/media/design/festival_tsifrovogo_dizayna_offf/
-		https://skillbox.ru/media/design/festival_tsifrovogo_dizayna_offf//courses/
-		https://skillbox.ru/media/design/festival_tsifrovogo_dizayna_offf//media/design/
-		https://skillbox.ru/media/design/festival_tsifrovogo_dizayna_offf//media/authors/aleksej-karelin/
-		https://skillbox.ru/media/design/festival_tsifrovogo_dizayna_offf//media/topic/actions/
-		https://skillbox.ru/media/design/festival_tsifrovogo_dizayna_offf//media/code/
-		https://skillbox.ru/media/design/festival_tsifrovogo_dizayna_offf//media/marketing/
-		https://skillbox.ru/media/design/festival_tsifrovogo_dizayna_offf//media/management/
-		https://skillbox.ru/media/design/festival_tsifrovogo_dizayna_offf//media/
-	https://skillbox.ru/media/
-		https://skillbox.ru/media//media/education/
-		https://skillbox.ru/media//media/education/rossiyskie-itkompanii-poprosili-priostanovit-zakupku-inostrannoy-tekhniki-dlya-shkol/
-		https://skillbox.ru/media//media/education/16-podrostkov-otkladyvayut-dengi-na-dopolnitelnoe-obrazovanie/
-		https://skillbox.ru/media//media/education/valeriy-falkov-i-german-gref-sdelali-prognozy-naschyet-budushchego-sfery-obrazovaniya/
-		https://skillbox.ru/media//media/gamedev/
-		https://skillbox.ru/media//media/gamedev/sony-nauchit-igry-pomogat-neopytnym-geymeram/
-		https://skillbox.ru/media//media/design/v-londone-otkrylas-vystavka-pro-istoriyu-dizayna-krossovok/
-		https://skillbox.ru/media//media/gamedev/fanaty-uvereny-chto-seychas-luchshee-vremya-dlya-reliza-obnovlyennoy-sagi-dead-space/
-		https://skillbox.ru/media//media/business/
-		https://skillbox.ru/media//media/business/pravitelstvo-vydelit-53-mlrd-rubley-na-podderzhku-ii/
-		https://skillbox.ru/media//media/business/sber-zapustil-servis-po-arende-avtomobiley/
-		https://skillbox.ru/media//media/topic/news/
-		https://skillbox.ru/media//media/education/tak-li-strashen-stress-ot-ege-i-kak-uchitelyu-pravilno-nastroit-detey-mnenie-psikhologa/
-		https://skillbox.ru/media//media/topic/opinions/
-		https://skillbox.ru/media//media/design/khudozhnikidizaynery-dali-pikasso-klimt-i-drugie/
-		https://skillbox.ru/media//media/topic/collections/
-		https://skillbox.ru/media//media/gamedev/poka-vy-igrali-tretya-nedelya-maya/
-		https://skillbox.ru/media//media/education/8-voprosov-ob-onlaynmagistrature/
-		https://skillbox.ru/media//media/topic/articles/
-		https://skillbox.ru/media//media/design/tipomaniya-eto-strast-k-bukvam-strast-k-kommunikatsiyam/
-		https://skillbox.ru/media//media/topic/interview/
-		https://skillbox.ru/media//media/code/vsemirnaya-istoriya-angular/
-		https://skillbox.ru/media//media/design/interview-aleksandra-sankova/
-		https://skillbox.ru/media//media/marketing/chestnyy-marketing-kogda-eto-rabotaet-a-kogda-net/
-		https://skillbox.ru/media//media/business/tekhnologii-v-pokhoronnom-biznese/
-		https://skillbox.ru/media//media/design/chto-takoe-maskoty-i-kak-ikh-ispolzuyut-v-dizayne-firmennogo-stilya/
-		https://skillbox.ru/media//media/code/story-leonid-bondarenko/
-		https://skillbox.ru/media//media/topic/history/
-		https://skillbox.ru/media//media/business/etichnyy-khaking-kak-zarabotat-na-chuzhikh-oshibkakh-i-ne-ugodit-pod-statyu/
-		https://skillbox.ru/media//media/gamedev/ya-zhivu-radi-aplodismentov-put-geymdizaynera-kliffa-blezinski/
-		https://skillbox.ru/media//media/marketing/interview-nikolay-smirnov/
-		https://skillbox.ru/media//media/code/nuzhen-li-programmistu-angliyskiy/
-		https://skillbox.ru/media//media/marketing/story-asya-drozdova/
-	https://skillbox.ru/code/
-		https://skillbox.ru/code//courses/sport/
-		https://skillbox.ru/code//courses/kibersport/
-		https://skillbox.ru/code//courses/geymdizayn/
-		https://skillbox.ru/code//courses/issledovanie-auditorii/
-		https://skillbox.ru/code//courses/razrabotka igr/
-		https://skillbox.ru/code//courses/upravlenie-proektami/
-		https://skillbox.ru/code//courses/strategiya/
-		https://skillbox.ru/code//courses/2d- i 3d-grafika/
-		https://skillbox.ru/code//courses/konkurentnyy-analiz/
-		https://skillbox.ru/code//courses/kino/
-		https://skillbox.ru/code//courses/menedzhment/
-		https://skillbox.ru/code//courses/analitika/
-		https://skillbox.ru/code//courses/upravlenie-komandami/
-		https://skillbox.ru/code//courses/3d-modelirovanie/
-		https://skillbox.ru/code//courses/unreal engine 4/
-		https://skillbox.ru/code//courses/stsenariy/
-		https://skillbox.ru/code//courses/kontsept-art/
-		https://skillbox.ru/code//courses/risovanie i illyustratsiya/
-		https://skillbox.ru/code//courses/3d/
-		https://skillbox.ru/code//courses/igrovye dvizhki/
-		https://skillbox.ru/code//courses/kompozitsiya_tsvet/
-		https://skillbox.ru/code//courses/marketing_igr/
-		https://skillbox.ru/code//courses/dizayn-dokument/
-		https://skillbox.ru/code//courses/matematika/
-		https://skillbox.ru/code//courses/testirovanie/
-		https://skillbox.ru/code//courses/unity/
-		https://skillbox.ru/code//courses/trafik/
-		https://skillbox.ru/code//courses/yunit-ekonomika/
-		https://skillbox.ru/code//courses/avtovoronki/
-		https://skillbox.ru/code//courses/performance-marketing/
-		https://skillbox.ru/code//courses/targetirovannaya-reklama/
-		https://skillbox.ru/code//courses/kontent-marketing/
-		https://skillbox.ru/code//courses/kontekstnaya-reklama/
-		https://skillbox.ru/code//courses/s++/
-		https://skillbox.ru/code//courses/c/
-		https://skillbox.ru/code//courses/git/
-		https://skillbox.ru/code//courses/veb-prilozheniya/
-		https://skillbox.ru/code//courses/backend-razrabotka/
-		https://skillbox.ru/code//courses/sozdanie saytov/
-		https://skillbox.ru/code//courses/freymvorki/
-		https://skillbox.ru/code//courses/frontend-razrabotka/
-		https://skillbox.ru/code//courses/vyorstka/
-		https://skillbox.ru/code//courses/bazy dannykh/
-		https://skillbox.ru/code//courses/python/
-		https://skillbox.ru/code//courses/javascript/
-		https://skillbox.ru/code//courses/figma/
-		https://skillbox.ru/code//courses/sql/
-		https://skillbox.ru/code//courses/java/
-		https://skillbox.ru/code//courses/vizualizatsiya dannykh/
-		https://skillbox.ru/code//courses/data science/
-		https://skillbox.ru/code//courses/mobilnye prilozheniya/
-		https://skillbox.ru/code//courses/komandnaya stroka (bash)/
-		https://skillbox.ru/code//courses/rabota s tablitsami/
-		https://skillbox.ru/code//courses/administrirovanie/
-		https://skillbox.ru/code//courses/php/
-		https://skillbox.ru/code//courses/algoritmy i struktury dannykh/
-		https://skillbox.ru/code//courses/ios/
-		https://skillbox.ru/code//courses/machine learning/
-		https://skillbox.ru/code//courses/android/
-		https://skillbox.ru/code//courses/devops/
-		https://skillbox.ru/code//courses/linux/
-		https://skillbox.ru/code//courses/django/
-		https://skillbox.ru/code//courses/docker/
-		https://skillbox.ru/code//courses/biznes/
-		https://skillbox.ru/code//courses/upravlenie proektami/
-		https://skillbox.ru/code//courses/planirovanie/
-		https://skillbox.ru/code//courses/soft skills/
-		https://skillbox.ru/code//courses/finansy/
-		https://skillbox.ru/code//courses/predprinimatelstvo/
-		https://skillbox.ru/code//courses/upravlenie komandami/
-		https://skillbox.ru/code//courses/motivatsiya/
-		https://skillbox.ru/code//courses/oformlenie prezentatsiy/
-		https://skillbox.ru/code//courses/razvitie produkta/
-		https://skillbox.ru/code//courses/issledovanie auditorii/
-		https://skillbox.ru/code//courses/korporativnaya kultura/
-		https://skillbox.ru/code//courses/prodazhi/
-		https://skillbox.ru/code//courses/konkurentnyy analiz/
-		https://skillbox.ru/code//courses/google tablitsy/
-		https://skillbox.ru/code//courses/hr/
-		https://skillbox.ru/code//courses/prodyusirovanie/
-		https://skillbox.ru/code//courses/frilans/
-		https://skillbox.ru/code//courses/custdev/
-		https://skillbox.ru/code//courses/kommyuniti/
-		https://skillbox.ru/code//courses/kontent/
-		https://skillbox.ru/code//courses/edtech/
-		https://skillbox.ru/code//courses/lidogenerazia/
-		https://skillbox.ru/code//courses/prototipirovanie/
-		https://skillbox.ru/code//courses/digital-agentstva/
-		https://skillbox.ru/code//courses/razrabotka kontseptsii/
-		https://skillbox.ru/code//courses/crm/
-		https://skillbox.ru/code//courses/brend/
-		https://skillbox.ru/code//courses/ux/ui/
-		https://skillbox.ru/code//courses/framework/
-		https://skillbox.ru/code//courses/storitelling/
-		https://skillbox.ru/code//courses/investitsii/
-		https://skillbox.ru/code//courses/monetizacia/
-		https://skillbox.ru/code//courses/tvorchestvo/
-		https://skillbox.ru/code//courses/sozdanie_myziki/
-		https://skillbox.ru/code//courses/music/
-		https://skillbox.ru/code//courses/makrosy/
-		https://skillbox.ru/code//courses/smm/
-		https://skillbox.ru/code//courses/targetirovannaya reklama/
-		https://skillbox.ru/code//courses/instagram/
-		https://skillbox.ru/code//courses/facebook/
-		https://skillbox.ru/code//courses/lidogeneratsiya/
-		https://skillbox.ru/code//courses/vkontakte/
-		https://skillbox.ru/code//courses/pr/
-		https://skillbox.ru/code//courses/kontekstnaya reklama/
-		https://skillbox.ru/code//courses/seo/
-		https://skillbox.ru/code//courses/rabota s dokumentami/
-		https://skillbox.ru/code//courses/pabota-s-blogerami/
-		https://skillbox.ru/code//courses/e-mail/
-		https://skillbox.ru/code//courses/tiktok/
-		https://skillbox.ru/code//courses/oformlenie_prezentatsiy/
-		https://skillbox.ru/code//courses/orm/
-		https://skillbox.ru/code//courses/sozdanie-saytov/
-		https://skillbox.ru/code//courses/ab-testy/
-		https://skillbox.ru/code//courses/bazy-dannykh/
-		https://skillbox.ru/code//courses/yazyk-r/
-		https://skillbox.ru/code//courses/portfolio dizaynera/
-		https://skillbox.ru/code//courses/dizayn sredy/
-		https://skillbox.ru/code//courses/photoshop/
-		https://skillbox.ru/code//courses/dizayn-kontseptsiya/
-		https://skillbox.ru/code//courses/kompozitsiya i tsvet/
-		https://skillbox.ru/code//courses/dizayn interera/
-		https://skillbox.ru/code//courses/dekorirovanie/
-		https://skillbox.ru/code//courses/fashion-design/
-		https://skillbox.ru/code//courses/landshaftnyy dizayn/
-		https://skillbox.ru/code//courses/graficheskiy dizayn/
-		https://skillbox.ru/code//courses/dizayn interfeysov/
-		https://skillbox.ru/code//courses/sketching/
-		https://skillbox.ru/code//courses/veb-dizayn/
-		https://skillbox.ru/code//courses/adobe illustrator/
-		https://skillbox.ru/code//courses/photografia/
-		https://skillbox.ru/code//courses/obrabotka photografiy/
-		https://skillbox.ru/code//courses/lightroom/
-		https://skillbox.ru/code//courses/2d-i-3d-grafika/
-		https://skillbox.ru/code//courses/motion-design/
-		https://skillbox.ru/code//courses/upravlenie_proektami/
-		https://skillbox.ru/code//courses/uvelirniy dizain/
-		https://skillbox.ru/code//courses/fashion-baing/
-		https://skillbox.ru/code//courses/floristika/
-		https://skillbox.ru/code//courses/kulinarija/
-		https://skillbox.ru/code//courses/konditer/
-		https://skillbox.ru/code//courses/deserty/
-		https://skillbox.ru/code//courses/clo3d/
-		https://skillbox.ru/code//courses/cinema-4d/
-		https://skillbox.ru/code//courses/animatsiya-interfeysov/
-		https://skillbox.ru/code//courses/after-effects/
-		https://skillbox.ru/code//courses/beauty/
-		https://skillbox.ru/code//courses/makeup/
-		https://skillbox.ru/code//courses/ypravlenie/
-		https://skillbox.ru/code//courses/rabota-s-komandoi/
-		https://skillbox.ru/code//courses/liderstvo/
-		https://skillbox.ru/code//courses/prinytie-resheniy/
-		https://skillbox.ru/code//courses/kontrol/
-		https://skillbox.ru/code//courses/soft_skills/
-		https://skillbox.ru/code//courses/issledovanie/
-		https://skillbox.ru/code//courses/trendy/
-		https://skillbox.ru/code//courses/kommynikazia/
-		https://skillbox.ru/code//courses/bizness-komynikazia/
-		https://skillbox.ru/code//courses/digital/
-		https://skillbox.ru/code//courses/digital-skills/
-		https://skillbox.ru/code//courses/vyvod-novogo-producta/
-		https://skillbox.ru/code//courses/razrabotka-producta/
-		https://skillbox.ru/code//courses/promyshlennost/
-		https://skillbox.ru/code//courses/innovazii/
-		https://skillbox.ru/code//courses/zifrovai-transformazia/
-		https://skillbox.ru/code//courses/avtomatization/
-		https://skillbox.ru/code//courses/zifrovai-gramotnost/
-		https://skillbox.ru/code//courses/rabota-s-ekspertom/
-		https://skillbox.ru/code//courses/video-proizvodstvo/
-		https://skillbox.ru/code//courses/freelance/
-		https://skillbox.ru/code//courses/abletonlive/
-		https://skillbox.ru/code//courses/management/
-		https://skillbox.ru/code//courses/sozdanie-myziky/
-		https://skillbox.ru/code//courses/business/
-		https://skillbox.ru/code//courses/ypravlenie-proektami/
-		https://skillbox.ru/code//courses/svedenie-i-mastering/
-		https://skillbox.ru/code//courses/montazh/
-		https://skillbox.ru/code//courses/teoria-myziky/
-		https://skillbox.ru/code//courses/adobepremier/
-		https://skillbox.ru/code//courses/protools/
-		https://skillbox.ru/code//courses/produsirovanie-video/
-		https://skillbox.ru/code//courses/saund-design/
-		https://skillbox.ru/code//courses/ableton/
-		https://skillbox.ru/code//courses/osnovy-kompozisii/
-		https://skillbox.ru/code//courses/istoriy-kino/
-		https://skillbox.ru/code//courses/rabota-s-kameroi/
-		https://skillbox.ru/code//courses/avid/
-		https://skillbox.ru/code//courses/davinci/
-		https://skillbox.ru/code//courses/klipy/
-		https://skillbox.ru/code//courses/zvykozapis/
-	https://skillbox.ru/course/profession-data-scientist/
-	https://skillbox.ru/course/profession-python/
-	https://skillbox.ru/course/profession-webdev/
-	https://skillbox.ru/course/profession-test/
-	https://skillbox.ru/course/profession-java/
-	https://skillbox.ru/course/profession-1c/
-	https://skillbox.ru/course/profession-android-developer/
-	https://skillbox.ru/course/profession-cybersecurity/
-	https://skillbox.ru/course/profession-ios-developer/
-	https://skillbox.ru/course/java-dev/
-	https://skillbox.ru/course/devops/
-	https://skillbox.ru/course/aiphil/
-	https://skillbox.ru/course/java/
-	https://skillbox.ru/course/webdev/
-	https://skillbox.ru/course/sql-developer/
-	https://skillbox.ru/course/powerbi/
-	https://skillbox.ru/course/frontend-developer/
-	https://skillbox.ru/course/sql-analysis/
-	https://skillbox.ru/course/cybersecurity/
-	https://skillbox.ru/course/vue-js/
-	https://skillbox.ru/design/
-	https://skillbox.ru/course/profession-graphdesigner/
-	https://skillbox.ru/course/profession-interiordesigner/
-	https://skillbox.ru/course/profession-webdesigner/
-	https://skillbox.ru/course/profession-ux/
-	https://skillbox.ru/course/profession-designer-interior/
-	https://skillbox.ru/course/profession-motiondesigner/
-	https://skillbox.ru/course/profession-commercial-illustrator-2/
-	https://skillbox.ru/course/profession-fashion-design/
-	https://skillbox.ru/course/profession-landscape-design/
-	https://skillbox.ru/course/profession-designer-interior-landscape/
-	https://skillbox.ru/course/cutting-sewing-2/
-	https://skillbox.ru/course/webdesign-pro/
-	https://skillbox.ru/course/motion-design/
-	https://skillbox.ru/course/interiordesign-pro/
-	https://skillbox.ru/course/illustrator-start/
-	https://skillbox.ru/course/interior-business-course/
-	https://skillbox.ru/course/graphic-design/
-	https://skillbox.ru/course/ux-designer/
-	https://skillbox.ru/course/photoshoppro/
-	https://skillbox.ru/course/landscape-design/
-	https://skillbox.ru/marketing/
-	https://skillbox.ru/course/profession-marketolog/
-	https://skillbox.ru/course/profession-smm-specialist/
-	https://skillbox.ru/course/profession-target/
+https://skillbox.ru
+	https://skillbox.ru/
 	https://skillbox.ru/company/
 	https://skillbox.ru/media/
+		https://skillbox.ru/media/?section=0
+		https://skillbox.ru/media/?section=8
+		https://skillbox.ru/media/?section=10
+		https://skillbox.ru/media/?section=18
+		https://skillbox.ru/media/?section=21
+		https://skillbox.ru/media/?section=9
+		https://skillbox.ru/media/?section=11
+		https://skillbox.ru/media/?section=17
+		https://skillbox.ru/media/?section=22
+		https://skillbox.ru/media/design/
+			https://skillbox.ru/media/design/v-londone-otkrylas-vystavka-pro-istoriyu-dizayna-krossovok/
+			https://skillbox.ru/media/design/shkola-dizayna-rankhigs-provodit-konferentsiyu-kirillitsa-2021/
+			https://skillbox.ru/media/design/11-konkursov-dlya-dizaynerov-v-mae/
+			https://skillbox.ru/media/design/ikea-razrabotala-dizayn-intererov-dlya-lyudey-s-ogranichennymi-vozmozhnostyami/
+			https://skillbox.ru/media/design/lego-vypustit-pervyy-lgbtk-nabor/
+			https://skillbox.ru/media/design/android-12-tryekhmernye-videozvonki-i-drugie-obnovleniya-google/
+			https://skillbox.ru/media/design/uber-russia-oformila-avtomobili-kartinami-sovremennykh-khudozhnikov/
+			https://skillbox.ru/media/design/?PAGEN_1=2
+		https://skillbox.ru/media/design/kompaniya-tiffany-co-izmenila-firmennyy-tsvet-dlya-odnogo-iz-magazinov/
+		https://skillbox.ru/media/management/
+			https://skillbox.ru/media/management/kazhdomu-desyatomu-hrspetsialistu-ne-khvataet-znaniy-dlya-nayma-programmistov/
+			https://skillbox.ru/media/management/chto-takoe-trello-podrobnyy-gayd-po-ispolzovaniyu-servisa/
+			https://skillbox.ru/media/management/abonement-v-sportzal-i-sertifikat-na-produkty-kakie-bonusy-nuzhno-vydavat-na-rabote/
+			https://skillbox.ru/media/management/90-sotrudnikov-v-rossii-stalkivayutsya-s-peregruzkami-na-rabote/
+			https://skillbox.ru/media/management/issledovanie_-rabochaya-nedelya-dlinoy-bolee-55-chasov-sokrashchaet-zhizn/
+			https://skillbox.ru/media/management/story-nataliya-malusheva/
+			https://skillbox.ru/media/management/glava-wework_-_udalyenka-nravitsya-ne-vovlechyennym-v-rabotu-sotrudnikam/
+			https://skillbox.ru/media/management/google-vvodit-postoyannuyu-udalyenku/
+			https://skillbox.ru/media/management/kak-vybrat-crm-dlya-biznesa-sostavlyaem-brif-dlya-razrabotchika/
+			https://skillbox.ru/media/management/rynok_truda_posle_pandemii_kakim_on_budet/
+			https://skillbox.ru/media/management/bolshinstvo_rossiyan_vystupili_za_gibridnyy_grafik/
+			https://skillbox.ru/media/management/poluchat_sotni_soobshcheniy_i_uvedomleniy_khuzhe_chem_vernutsya_v_ofis_mnenie_udalyenshchikov/
+			https://skillbox.ru/media/management/kto_takoy_menedzher_po_innovatsiyam/
+			https://skillbox.ru/media/management/?PAGEN_1=2
+		https://skillbox.ru/media/management/bolshe-poloviny-rossiyan-mechtayut-nachat-svoy-biznes/
+		https://skillbox.ru/media/business/
+			https://skillbox.ru/media/business/instagram-tiktok-i-eshchye-18-itkompaniy-otkroyut-predstavitelstva-v-rossii/
+			https://skillbox.ru/media/business/roskomnadzor-prigrozil-zamedlit-rabotu-google/
+			https://skillbox.ru/media/business/pravitelstvo-vydelit-53-mlrd-rubley-na-podderzhku-ii/
+			https://skillbox.ru/media/business/sber-zapustil-servis-po-arende-avtomobiley/
+			https://skillbox.ru/media/business/v-rossii-postroyat-tak-nazyvaemuyu-umnuyu-dorogu-dlya-bespilotnikov/
+			https://skillbox.ru/media/business/facebook-sozdal-sistemu-raspoznavaniya-rechi/
+			https://skillbox.ru/media/business/google-idyet-protiv-roskomnadzora/
+			https://skillbox.ru/media/business/itgigantov-obyazhut-otkryt-filialy-v-rossii-zakonoproekt-vnesyen-v-gosdumu/
+			https://skillbox.ru/media/business/facebook-otkazalsya-vydavat-vlastyam-rf-dannye-polzovateley/
+			https://skillbox.ru/media/business/na-yandeksmarkete-poyavilis-tak-nazyvaemye-umnye-otzyvy/
+			https://skillbox.ru/media/business/tesla-poyavitsya-v-rossii/
+			https://skillbox.ru/media/business/?PAGEN_1=2
+		https://skillbox.ru/media/business/na-kakie-iirazrabotki-vydelyat-subsidii-v-pravitelstve-ozvuchili-kriterii/
+		https://skillbox.ru/media/gamedev/
+			https://skillbox.ru/media/gamedev/sony-vremenno-otklyuchila-servery-littlebigplanet-izza-kiberatak/
+			https://skillbox.ru/media/gamedev/tencent-priobrela-38-aktsiy-studii-remedy/
+			https://skillbox.ru/media/gamedev/sumochka-gucci-v-roblox-mozhet-stoit-dorozhe-realnoy/
+			https://skillbox.ru/media/gamedev/glava-ubisoft-oprovergaet-informatsiyu-o-toksichnoy-atmosfere-vnutri-kompanii/
+			https://skillbox.ru/media/gamedev/sony-nauchit-igry-pomogat-neopytnym-geymeram/
+			https://skillbox.ru/media/gamedev/fanaty-uvereny-chto-seychas-luchshee-vremya-dlya-reliza-obnovlyennoy-sagi-dead-space/
+			https://skillbox.ru/media/gamedev/gearbox-sobiraet-sredstva-na-borbu-s-tekhasskim-antitransgendernym-zakonom/
+			https://skillbox.ru/media/gamedev/smi-netflix-zaymyetsya-videoigrami/
+			https://skillbox.ru/media/gamedev/microsoft-bolshe-ne-pozvolyaet-kupit-xbox-game-pass-ultimate-po-snizhennoy-tsene/
+			https://skillbox.ru/media/gamedev/housemarque-khochet-i-dalshe-rabotat-nad-aaataytlami/
+			https://skillbox.ru/media/gamedev/?PAGEN_1=2
+		https://skillbox.ru/media/gamedev/konami-planiruet-peredavat-na-autsors-bolshe-taytlov/
+		https://skillbox.ru/media/gamedev/mundfish-atomic-heart-uzhe-gotova/
+		https://skillbox.ru/media/gamedev/pravitelstvo-italii-planiruet-predostavit-igrovym-razrabotchikam-nalogovye-lgoty/
+		https://skillbox.ru/media/education/
+			https://skillbox.ru/media/education/rossiyskie-itkompanii-poprosili-priostanovit-zakupku-inostrannoy-tekhniki-dlya-shkol/
+			https://skillbox.ru/media/education/16-podrostkov-otkladyvayut-dengi-na-dopolnitelnoe-obrazovanie/
+			https://skillbox.ru/media/education/valeriy-falkov-i-german-gref-sdelali-prognozy-naschyet-budushchego-sfery-obrazovaniya/
+			https://skillbox.ru/media/education/obrazovatelnye-prilozheniya-dlya-detey-mogut-byt-ne-tak-polezny-kak-obeshchayut-razrabotchiki/
+			https://skillbox.ru/media/education/minobrnauki-namereno-izmenit-pravila-razrabotki-fgos/
+			https://skillbox.ru/media/education/eksperty-predlozhili-vvesti-diagnostiku-emotsionalnogo-sostoyaniya-shkolnikov-i-uchiteley/
+			https://skillbox.ru/media/education/v-rossiyskikh-vuzakh-mozhet-poyavitsya-okolo-100-tsifrovykh-kafedr-do-2024-goda/
+			https://skillbox.ru/media/education/idealnymi-studentami-chashche-schitayut-prosto-punktualnykh-i-organizovannykh-a-ne-samykh-umnykh/
+			https://skillbox.ru/media/education/minprosveshcheniya-razrabotalo-proekt-prikaza-o-tsifrovizatsii-shkol/
+			https://skillbox.ru/media/education/issledovanie-distantsionnoe-obuchenie-ne-sposobstvuet-uluchsheniyu-rezhima-sna/
+			https://skillbox.ru/media/education/uchitelya-schitayut-chto-budushchee-obrazovaniya-za-smeshannym-formatom-obucheniya/
+			https://skillbox.ru/media/education/?PAGEN_1=2
+		https://skillbox.ru/media/education/do-poloviny-studentov-rossiyskikh-vuzov-spisyvayut-na-ekzamenakh-i-pribegayut-k-plagiatu/
+		https://skillbox.ru/media/gamedev/na-vynesenie-verdikta-po-delu-apple-i-epic-games-uydut-mesyatsy/
+		https://skillbox.ru/media/topic/news/
+			https://skillbox.ru/media/topic/news/design/
+				https://skillbox.ru/media/topic/news/design/?PAGEN_2=2
+			https://skillbox.ru/media/topic/news/code/
+			https://skillbox.ru/media/topic/news/gamedev/
+				https://skillbox.ru/media/topic/news/gamedev/?PAGEN_2=2
+			https://skillbox.ru/media/topic/news/business/
+				https://skillbox.ru/media/topic/news/business/?PAGEN_2=2
+			https://skillbox.ru/media/topic/news/marketing/
+			https://skillbox.ru/media/topic/news/management/
+				https://skillbox.ru/media/topic/news/management/?PAGEN_2=2
+			https://skillbox.ru/media/topic/news/growth/
+			https://skillbox.ru/media/topic/news/education/
+				https://skillbox.ru/media/topic/news/education/?PAGEN_2=2
+			https://skillbox.ru/media/topic/news/?PAGEN_1=2
+		https://skillbox.ru/media/design/chto-takoe-conversational-design-i-kak-sproektirovat-chelovechnyy-interfeys/
+		https://skillbox.ru/media/topic/articles/
+			https://skillbox.ru/media/topic/articles/design/
+				https://skillbox.ru/media/topic/articles/design/?PAGEN_2=2
+			https://skillbox.ru/media/topic/articles/code/
+				https://skillbox.ru/media/topic/articles/code/?PAGEN_2=2
+			https://skillbox.ru/media/topic/articles/gamedev/
+				https://skillbox.ru/media/topic/articles/gamedev/?PAGEN_2=2
+			https://skillbox.ru/media/topic/articles/business/
+				https://skillbox.ru/media/topic/articles/business/?PAGEN_2=2
+			https://skillbox.ru/media/topic/articles/marketing/
+				https://skillbox.ru/media/topic/articles/marketing/?PAGEN_2=2
+			https://skillbox.ru/media/topic/articles/management/
+				https://skillbox.ru/media/topic/articles/management/?PAGEN_2=2
+			https://skillbox.ru/media/topic/articles/growth/
+			https://skillbox.ru/media/topic/articles/education/
+				https://skillbox.ru/media/topic/articles/education/?PAGEN_2=2
+			https://skillbox.ru/media/topic/articles/?PAGEN_1=2
+		https://skillbox.ru/media/design/vakansii-dlya-dizaynerov-tretya-nedelya-maya/
+		https://skillbox.ru/media/education/tak-li-strashen-stress-ot-ege-i-kak-uchitelyu-pravilno-nastroit-detey-mnenie-psikhologa/
+		https://skillbox.ru/media/topic/opinions/
+			https://skillbox.ru/media/topic/opinions/design/
+			https://skillbox.ru/media/topic/opinions/code/
+			https://skillbox.ru/media/topic/opinions/gamedev/
+			https://skillbox.ru/media/topic/opinions/business/
+			https://skillbox.ru/media/topic/opinions/marketing/
+			https://skillbox.ru/media/topic/opinions/management/
+			https://skillbox.ru/media/topic/opinions/growth/
+			https://skillbox.ru/media/topic/opinions/education/
+		https://skillbox.ru/media/design/khudozhnikidizaynery-dali-pikasso-klimt-i-drugie/
+		https://skillbox.ru/media/topic/collections/
+			https://skillbox.ru/media/topic/collections/design/
+				https://skillbox.ru/media/topic/collections/design/?PAGEN_2=2
+			https://skillbox.ru/media/topic/collections/code/
+				https://skillbox.ru/media/topic/collections/code/?PAGEN_2=2
+			https://skillbox.ru/media/topic/collections/gamedev/
+			https://skillbox.ru/media/topic/collections/business/
+			https://skillbox.ru/media/topic/collections/marketing/
+				https://skillbox.ru/media/topic/collections/marketing/?PAGEN_2=2
+			https://skillbox.ru/media/topic/collections/management/
+				https://skillbox.ru/media/topic/collections/management/?PAGEN_2=2
+			https://skillbox.ru/media/topic/collections/growth/
+			https://skillbox.ru/media/topic/collections/education/
+			https://skillbox.ru/media/topic/collections/?PAGEN_1=2
+		https://skillbox.ru/media/gamedev/poka-vy-igrali-tretya-nedelya-maya/
+		https://skillbox.ru/media/education/8-voprosov-ob-onlaynmagistrature/
+		https://skillbox.ru/media/design/tipomaniya-eto-strast-k-bukvam-strast-k-kommunikatsiyam/
+		https://skillbox.ru/media/topic/interview/
+			https://skillbox.ru/media/topic/interview/design/
+				https://skillbox.ru/media/topic/interview/design/?PAGEN_2=2
+			https://skillbox.ru/media/topic/interview/code/
+			https://skillbox.ru/media/topic/interview/gamedev/
+			https://skillbox.ru/media/topic/interview/business/
+			https://skillbox.ru/media/topic/interview/marketing/
+				https://skillbox.ru/media/topic/interview/marketing/?PAGEN_2=2
+			https://skillbox.ru/media/topic/interview/management/
+			https://skillbox.ru/media/topic/interview/growth/
+			https://skillbox.ru/media/topic/interview/education/
+			https://skillbox.ru/media/topic/interview/?PAGEN_1=2
+		https://skillbox.ru/media/education/po-silam-li-uchitelyu-predotvratit-napadenie-psikhicheski-neustoychivogo-podrostka-na-shkolu/
+		https://skillbox.ru/media/code/teper-dazhe-rakety-v-kosmos-zapuskayut-neyroseti/
+		https://skillbox.ru/media/code/
+			https://skillbox.ru/media/code/nuzhen-li-programmistu-angliyskiy/
+			https://skillbox.ru/media/code/geymifitsiruy-eto-6-printsipov-povedencheskoy-psikhologii-dlya-razrabotki-prilozheniy/
+			https://skillbox.ru/media/code/vsemirnaya-istoriya-angular/
+			https://skillbox.ru/media/code/story-vladislav-kaurov/
+			https://skillbox.ru/media/code/kratkaya-istoriya-python/
+			https://skillbox.ru/media/code/top-5-ezotericheskikh-yazykov-programmirovaniya-v-primerakh/
+			https://skillbox.ru/media/code/kak-it-kompanii-mogut-predotvratit-vnutrennyuyu-utechku-personalnykh-dannykh/
+			https://skillbox.ru/media/code/konfidentsialnaya-informatsiya-i-kommercheskaya-tayna-chto-nuzhno-znat-programmistu/
+			https://skillbox.ru/media/code/story-anton-bushmanov/
+			https://skillbox.ru/media/code/?PAGEN_1=2
+		https://skillbox.ru/media/design/proekty-studii-wolff-olins/
+		https://skillbox.ru/media/business/grafika-ubivaet-voobrazhenie-pochemu-rastet-spros-na-audioigry-i-zachem-oni-nuzhny/
+		https://skillbox.ru/media/base/kak-uluchshit-kod-na-python-priyemy-refaktoringa/
+		https://skillbox.ru/media/base/
+			https://skillbox.ru/media/base/design/
+			https://skillbox.ru/media/base/code/
+				https://skillbox.ru/media/base/code/?PAGEN_2=2
+			https://skillbox.ru/media/base/gamedev/
+			https://skillbox.ru/media/base/business/
+			https://skillbox.ru/media/base/marketing/
+			https://skillbox.ru/media/base/management/
+			https://skillbox.ru/media/base/growth/
+			https://skillbox.ru/media/base/education/
+			https://skillbox.ru/media/base/klassy-i-obekty-v-java/
+			https://skillbox.ru/media/base/kak-razmestit-spring-boot-prilozhenie-na-heroku-com-poshagovaya-instruktsiya/
+			https://skillbox.ru/media/base/funktsionalnye_interfeysy_i_lyambda_vyrazheniya_v_java/
+			https://skillbox.ru/media/base/inkrement_i_dekrement_v_java/
+			https://skillbox.ru/media/base/logicheskie_operatory_v_java/
+			https://skillbox.ru/media/base/code/java/
+			https://skillbox.ru/media/base/tip_boolean_i_operatory_sravneniya_v_java/
+			https://skillbox.ru/media/base/kak_verstalshchiku_rabotat_s_svg/
+			https://skillbox.ru/media/base/kak_rabotat_s_fonovymi_kartinkami_v_css/
+			https://skillbox.ru/media/base/isklyucheniya_v_java_chast_1/
+			https://skillbox.ru/media/base/massivy_v_java_sozdayem_zapolnyaem_ispolzuem/
+			https://skillbox.ru/media/base/kak_ustanovit_jdk_i_sredu_razrabotki_intellij_idea/
+			https://skillbox.ru/media/base/goryachie_klavishi_v_vscode/
+			https://skillbox.ru/media/base/java_code_style_kak_pravilno_oformlyat_kod_java/
+			https://skillbox.ru/media/base/?PAGEN_1=2
+		https://skillbox.ru/media/marketing/chestnyy-marketing-kogda-eto-rabotaet-a-kogda-net/
+		https://skillbox.ru/media/marketing/
+			https://skillbox.ru/media/marketing/interview-nikolay-smirnov/
+			https://skillbox.ru/media/marketing/story-asya-drozdova/
+			https://skillbox.ru/media/marketing/v-gosdume-mogut-sozdat-sistemu-izmereniya-auditorii-runeta/
+			https://skillbox.ru/media/marketing/internetreklamu-pod-uchyet-novyy-zakonoproekt-v-gosdume/
+			https://skillbox.ru/media/marketing/interview-stella-svyatskaya/
+			https://skillbox.ru/media/marketing/amerikanskaya-telekompaniya-zapustit-serial-na-osnove-blokcheyntekhnologiy/
+			https://skillbox.ru/media/marketing/intervyu-lybov-kuris/
+			https://skillbox.ru/media/marketing/alfabanku-morgenshtern-sberu-milokhin/
+			https://skillbox.ru/media/marketing/mts-i-_lukoyl_-zapustyat-sovmestnuyu-podpisku/
+			https://skillbox.ru/media/marketing/kakimi-kachestvami-dolzhen-obladat-idealnyy-direktor-po-marketingu/
+			https://skillbox.ru/media/marketing/kak-voyti-v-istoriyu-esli-ty-pr-menedzher/
+			https://skillbox.ru/media/marketing/net_-reklame-fastfuda_-novyy-zapret-v-velikobritanii/
+			https://skillbox.ru/media/marketing/tiktoki-vmesto-rezyume_-sotsset-zapustit-servis-vakansiy/
+			https://skillbox.ru/media/marketing/?PAGEN_1=2
+		https://skillbox.ru/media/business/tekhnologii-v-pokhoronnom-biznese/
+		https://skillbox.ru/media/design/chto-takoe-maskoty-i-kak-ikh-ispolzuyut-v-dizayne-firmennogo-stilya/
+		https://skillbox.ru/media/code/story-leonid-bondarenko/
+		https://skillbox.ru/media/topic/history/
+			https://skillbox.ru/media/topic/history/design/
+				https://skillbox.ru/media/topic/history/design/?PAGEN_2=2
+			https://skillbox.ru/media/topic/history/code/
+				https://skillbox.ru/media/topic/history/code/?PAGEN_2=2
+			https://skillbox.ru/media/topic/history/gamedev/
+			https://skillbox.ru/media/topic/history/business/
+			https://skillbox.ru/media/topic/history/marketing/
+				https://skillbox.ru/media/topic/history/marketing/?PAGEN_2=2
+			https://skillbox.ru/media/topic/history/management/
+			https://skillbox.ru/media/topic/history/growth/
+			https://skillbox.ru/media/topic/history/education/
+			https://skillbox.ru/media/topic/history/?PAGEN_1=2
+		https://skillbox.ru/media/business/etichnyy-khaking-kak-zarabotat-na-chuzhikh-oshibkakh-i-ne-ugodit-pod-statyu/
 	https://skillbox.ru/code/
+		https://skillbox.ru/code/?page=2
+		https://skillbox.ru/code/?page=3
+		https://skillbox.ru/code/?page=4
 	https://skillbox.ru/design/
+		https://skillbox.ru/design/?page=2
+		https://skillbox.ru/design/?page=3
+		https://skillbox.ru/design/?page=4
+		https://skillbox.ru/design/?page=5
+		https://skillbox.ru/design/?page=10
 	https://skillbox.ru/marketing/
+		https://skillbox.ru/marketing/?page=2
+		https://skillbox.ru/marketing/?page=3
+		https://skillbox.ru/marketing/?page=4
+		https://skillbox.ru/marketing/?page=5
+		https://skillbox.ru/marketing/?page=6
 	https://skillbox.ru/management/
+		https://skillbox.ru/management/?page=2
+		https://skillbox.ru/management/?page=3
+		https://skillbox.ru/management/?page=4
+		https://skillbox.ru/management/?page=5
+		https://skillbox.ru/management/?page=8
 	https://skillbox.ru/games/
+		https://skillbox.ru/games/?page=2
+		https://skillbox.ru/games/?page=3
+		https://skillbox.ru/games/?page=4
 	https://skillbox.ru/multimedia/
+		https://skillbox.ru/multimedia/?page=2
+		https://skillbox.ru/multimedia/?page=3
 	https://skillbox.ru/for-business/
+		https://skillbox.ru/for-business/?page=2
+		https://skillbox.ru/for-business/?page=3
 	https://skillbox.ru/career/
 	https://skillbox.ru/otzyvy/
 	https://skillbox.ru/contacts/
@@ -298,397 +268,3 @@
 	https://skillbox.ru/teachers/
 	https://skillbox.ru/skillbox-licence/
 	https://skillbox.ru/payments/
-	https://skillbox.ru/media/design/story_sleptsov/
-	https://skillbox.ru/media/code/mitrofanov_story/
-	https://skillbox.ru/media/marketing/story_gagarina/
-		https://skillbox.ru/code//courses/sport/
-
-		https://skillbox.ru/code//courses/kibersport/	https://skillbox.ru/media/topic/history/
-		https://skillbox.ru/code//courses/geymdizayn/
-		https://skillbox.ru/code//courses/issledovanie-auditorii/
-		https://skillbox.ru/code//courses/razrabotka igr/
-		https://skillbox.ru/code//courses/upravlenie-proektami/
-		https://skillbox.ru/code//courses/strategiya/
-		https://skillbox.ru/code//courses/2d- i 3d-grafika/
-		https://skillbox.ru/code//courses/konkurentnyy-analiz/
-		https://skillbox.ru/code//courses/kino/
-		https://skillbox.ru/code//courses/menedzhment/
-		https://skillbox.ru/code//courses/analitika/
-		https://skillbox.ru/code//courses/upravlenie-komandami/
-		https://skillbox.ru/code//courses/3d-modelirovanie/
-		https://skillbox.ru/code//courses/unreal engine 4/
-		https://skillbox.ru/code//courses/stsenariy/
-		https://skillbox.ru/code//courses/kontsept-art/
-		https://skillbox.ru/code//courses/risovanie i illyustratsiya/
-		https://skillbox.ru/code//courses/3d/
-		https://skillbox.ru/code//courses/igrovye dvizhki/
-		https://skillbox.ru/code//courses/kompozitsiya_tsvet/
-		https://skillbox.ru/code//courses/marketing_igr/
-		https://skillbox.ru/code//courses/dizayn-dokument/
-		https://skillbox.ru/code//courses/matematika/
-		https://skillbox.ru/code//courses/testirovanie/
-		https://skillbox.ru/code//courses/unity/
-		https://skillbox.ru/code//courses/trafik/
-		https://skillbox.ru/code//courses/yunit-ekonomika/
-		https://skillbox.ru/code//courses/avtovoronki/
-		https://skillbox.ru/code//courses/performance-marketing/
-		https://skillbox.ru/code//courses/targetirovannaya-reklama/
-		https://skillbox.ru/code//courses/kontent-marketing/
-		https://skillbox.ru/code//courses/kontekstnaya-reklama/
-		https://skillbox.ru/code//courses/s++/
-		https://skillbox.ru/code//courses/c/
-		https://skillbox.ru/code//courses/git/
-		https://skillbox.ru/code//courses/veb-prilozheniya/
-		https://skillbox.ru/code//courses/backend-razrabotka/
-		https://skillbox.ru/code//courses/sozdanie saytov/
-		https://skillbox.ru/code//courses/freymvorki/
-		https://skillbox.ru/code//courses/frontend-razrabotka/
-		https://skillbox.ru/code//courses/vyorstka/
-		https://skillbox.ru/code//courses/bazy dannykh/
-		https://skillbox.ru/code//courses/python/
-		https://skillbox.ru/code//courses/javascript/
-		https://skillbox.ru/code//courses/figma/
-		https://skillbox.ru/code//courses/sql/
-		https://skillbox.ru/code//courses/java/
-		https://skillbox.ru/code//courses/vizualizatsiya dannykh/
-		https://skillbox.ru/code//courses/data science/
-		https://skillbox.ru/code//courses/mobilnye prilozheniya/
-		https://skillbox.ru/code//courses/komandnaya stroka (bash)/
-		https://skillbox.ru/code//courses/rabota s tablitsami/
-		https://skillbox.ru/code//courses/administrirovanie/
-		https://skillbox.ru/code//courses/php/
-		https://skillbox.ru/code//courses/algoritmy i struktury dannykh/
-		https://skillbox.ru/code//courses/ios/
-		https://skillbox.ru/code//courses/machine learning/
-		https://skillbox.ru/code//courses/android/
-		https://skillbox.ru/code//courses/devops/
-		https://skillbox.ru/code//courses/linux/
-		https://skillbox.ru/code//courses/django/
-		https://skillbox.ru/code//courses/docker/
-		https://skillbox.ru/code//courses/biznes/
-		https://skillbox.ru/code//courses/upravlenie proektami/
-		https://skillbox.ru/code//courses/planirovanie/
-		https://skillbox.ru/code//courses/soft skills/
-		https://skillbox.ru/code//courses/finansy/
-		https://skillbox.ru/code//courses/predprinimatelstvo/
-		https://skillbox.ru/code//courses/upravlenie komandami/
-		https://skillbox.ru/code//courses/motivatsiya/
-		https://skillbox.ru/code//courses/oformlenie prezentatsiy/
-		https://skillbox.ru/code//courses/razvitie produkta/
-		https://skillbox.ru/code//courses/issledovanie auditorii/
-		https://skillbox.ru/code//courses/korporativnaya kultura/
-		https://skillbox.ru/code//courses/prodazhi/
-		https://skillbox.ru/code//courses/konkurentnyy analiz/
-		https://skillbox.ru/code//courses/google tablitsy/
-		https://skillbox.ru/code//courses/hr/
-		https://skillbox.ru/code//courses/prodyusirovanie/
-		https://skillbox.ru/code//courses/frilans/
-		https://skillbox.ru/code//courses/custdev/
-		https://skillbox.ru/code//courses/kommyuniti/
-		https://skillbox.ru/code//courses/kontent/
-		https://skillbox.ru/code//courses/edtech/
-		https://skillbox.ru/code//courses/lidogenerazia/
-		https://skillbox.ru/code//courses/prototipirovanie/
-		https://skillbox.ru/code//courses/digital-agentstva/
-		https://skillbox.ru/code//courses/razrabotka kontseptsii/
-		https://skillbox.ru/code//courses/crm/
-		https://skillbox.ru/code//courses/brend/
-		https://skillbox.ru/code//courses/ux/ui/
-		https://skillbox.ru/code//courses/framework/
-		https://skillbox.ru/code//courses/storitelling/
-		https://skillbox.ru/code//courses/investitsii/
-		https://skillbox.ru/code//courses/monetizacia/
-		https://skillbox.ru/code//courses/tvorchestvo/
-		https://skillbox.ru/code//courses/sozdanie_myziki/
-		https://skillbox.ru/code//courses/music/
-		https://skillbox.ru/code//courses/makrosy/
-		https://skillbox.ru/code//courses/smm/
-		https://skillbox.ru/code//courses/targetirovannaya reklama/
-		https://skillbox.ru/code//courses/instagram/
-		https://skillbox.ru/code//courses/facebook/
-		https://skillbox.ru/code//courses/lidogeneratsiya/
-		https://skillbox.ru/code//courses/vkontakte/
-		https://skillbox.ru/code//courses/pr/
-		https://skillbox.ru/code//courses/kontekstnaya reklama/
-		https://skillbox.ru/code//courses/seo/
-		https://skillbox.ru/code//courses/rabota s dokumentami/
-		https://skillbox.ru/code//courses/pabota-s-blogerami/
-		https://skillbox.ru/code//courses/e-mail/
-		https://skillbox.ru/code//courses/tiktok/
-		https://skillbox.ru/code//courses/oformlenie_prezentatsiy/
-		https://skillbox.ru/code//courses/orm/
-		https://skillbox.ru/code//courses/sozdanie-saytov/
-		https://skillbox.ru/code//courses/ab-testy/
-		https://skillbox.ru/code//courses/bazy-dannykh/
-		https://skillbox.ru/code//courses/yazyk-r/
-		https://skillbox.ru/code//courses/portfolio dizaynera/
-		https://skillbox.ru/code//courses/dizayn sredy/
-		https://skillbox.ru/code//courses/photoshop/
-		https://skillbox.ru/code//courses/dizayn-kontseptsiya/
-		https://skillbox.ru/code//courses/kompozitsiya i tsvet/
-		https://skillbox.ru/code//courses/dizayn interera/
-		https://skillbox.ru/code//courses/dekorirovanie/
-		https://skillbox.ru/code//courses/fashion-design/
-		https://skillbox.ru/code//courses/landshaftnyy dizayn/
-		https://skillbox.ru/code//courses/graficheskiy dizayn/
-		https://skillbox.ru/code//courses/dizayn interfeysov/
-		https://skillbox.ru/code//courses/sketching/
-		https://skillbox.ru/code//courses/veb-dizayn/
-		https://skillbox.ru/code//courses/adobe illustrator/
-		https://skillbox.ru/code//courses/photografia/
-		https://skillbox.ru/code//courses/obrabotka photografiy/
-		https://skillbox.ru/code//courses/lightroom/
-		https://skillbox.ru/code//courses/2d-i-3d-grafika/
-		https://skillbox.ru/code//courses/motion-design/
-		https://skillbox.ru/code//courses/upravlenie_proektami/
-		https://skillbox.ru/code//courses/uvelirniy dizain/
-		https://skillbox.ru/code//courses/fashion-baing/
-		https://skillbox.ru/code//courses/floristika/
-		https://skillbox.ru/code//courses/kulinarija/
-		https://skillbox.ru/code//courses/konditer/
-		https://skillbox.ru/code//courses/deserty/
-		https://skillbox.ru/code//courses/clo3d/
-		https://skillbox.ru/code//courses/cinema-4d/
-		https://skillbox.ru/code//courses/animatsiya-interfeysov/
-		https://skillbox.ru/code//courses/after-effects/
-		https://skillbox.ru/code//courses/beauty/
-		https://skillbox.ru/code//courses/makeup/
-		https://skillbox.ru/code//courses/ypravlenie/
-		https://skillbox.ru/code//courses/rabota-s-komandoi/
-		https://skillbox.ru/code//courses/liderstvo/
-		https://skillbox.ru/code//courses/prinytie-resheniy/
-		https://skillbox.ru/code//courses/kontrol/
-		https://skillbox.ru/code//courses/soft_skills/
-		https://skillbox.ru/code//courses/issledovanie/
-		https://skillbox.ru/code//courses/trendy/
-		https://skillbox.ru/code//courses/kommynikazia/
-		https://skillbox.ru/code//courses/bizness-komynikazia/
-		https://skillbox.ru/code//courses/digital/
-		https://skillbox.ru/code//courses/digital-skills/
-		https://skillbox.ru/code//courses/vyvod-novogo-producta/
-		https://skillbox.ru/code//courses/razrabotka-producta/
-		https://skillbox.ru/code//courses/promyshlennost/
-		https://skillbox.ru/code//courses/innovazii/
-		https://skillbox.ru/code//courses/zifrovai-transformazia/
-		https://skillbox.ru/code//courses/avtomatization/
-		https://skillbox.ru/code//courses/zifrovai-gramotnost/
-		https://skillbox.ru/code//courses/rabota-s-ekspertom/
-		https://skillbox.ru/code//courses/video-proizvodstvo/
-		https://skillbox.ru/code//courses/freelance/
-		https://skillbox.ru/code//courses/abletonlive/
-		https://skillbox.ru/code//courses/management/
-		https://skillbox.ru/code//courses/sozdanie-myziky/
-		https://skillbox.ru/code//courses/business/
-		https://skillbox.ru/code//courses/ypravlenie-proektami/
-		https://skillbox.ru/code//courses/svedenie-i-mastering/
-		https://skillbox.ru/code//courses/montazh/
-		https://skillbox.ru/code//courses/teoria-myziky/
-		https://skillbox.ru/code//courses/adobepremier/
-		https://skillbox.ru/code//courses/protools/
-		https://skillbox.ru/code//courses/produsirovanie-video/
-		https://skillbox.ru/code//courses/saund-design/
-		https://skillbox.ru/code//courses/ableton/
-		https://skillbox.ru/code//courses/osnovy-kompozisii/
-		https://skillbox.ru/code//courses/istoriy-kino/
-		https://skillbox.ru/code//courses/rabota-s-kameroi/
-		https://skillbox.ru/code//courses/avid/
-		https://skillbox.ru/code//courses/davinci/
-		https://skillbox.ru/code//courses/klipy/
-		https://skillbox.ru/code//courses/zvykozapis/
-	https://skillbox.ru/course/profession-data-scientist/
-	https://skillbox.ru/course/profession-python/
-	https://skillbox.ru/course/profession-webdev/
-	https://skillbox.ru/course/profession-test/
-	https://skillbox.ru/course/profession-java/
-	https://skillbox.ru/course/profession-1c/
-	https://skillbox.ru/course/profession-android-developer/
-	https://skillbox.ru/course/profession-cybersecurity/
-	https://skillbox.ru/course/profession-ios-developer/
-	https://skillbox.ru/course/java-dev/
-	https://skillbox.ru/course/devops/
-	https://skillbox.ru/course/aiphil/
-	https://skillbox.ru/course/java/
-	https://skillbox.ru/course/webdev/
-	https://skillbox.ru/course/sql-developer/
-	https://skillbox.ru/course/powerbi/
-	https://skillbox.ru/course/frontend-developer/
-	https://skillbox.ru/course/sql-analysis/
-	https://skillbox.ru/course/cybersecurity/
-	https://skillbox.ru/course/vue-js/
-	https://skillbox.ru/course/design-corporate-online-training/
-	https://skillbox.ru/course/mun/
-	https://skillbox.ru/course/custdev-production-companies/
-	https://skillbox.ru/course/business-process-robotization/
-	https://skillbox.ru/course/trendwatching-basics/
-	https://skillbox.ru/course/construction-project-management/
-	https://skillbox.ru/course/effective-communication/
-	https://skillbox.ru/course/intellectual-property-lawyer/
-	https://skillbox.ru/course/project-management/
-	https://skillbox.ru/course/building-an-effective-team/
-	https://skillbox.ru/course/3d-generalist/
-	https://skillbox.ru/course/profession-gamedesigner/
-	https://skillbox.ru/course/profession-unity-middle/
-	https://skillbox.ru/course/profession-concept-art-pro/
-	https://skillbox.ru/course/3d-artist/
-	https://skillbox.ru/course/profession-2d-artist/
-	https://skillbox.ru/course/profession-ue4/
-	https://skillbox.ru/course/profession-vr-ar-dev/
-	https://skillbox.ru/course/profession-3d-animator/
-	https://skillbox.ru/course/profession-game-design/
-	https://skillbox.ru/course/streamer/
-	https://skillbox.ru/course/sportmanagement/
-	https://skillbox.ru/course/sport-media/
-	https://skillbox.ru/course/wellness-Internal-balance/
-	https://skillbox.ru/course/chess-for-beginners/
-	https://skillbox.ru/course/3d/
-	https://skillbox.ru/course/2d-pro/
-	https://skillbox.ru/course/2d-graphics/
-	https://skillbox.ru/course/vr-dev-unreal/
-	https://skillbox.ru/course/game-industry-introduction/
-	https://skillbox.ru/course/profession-graphdesigner/
-	https://skillbox.ru/course/profession-interiordesigner/
-	https://skillbox.ru/course/profession-webdesigner/
-	https://skillbox.ru/course/profession-ux/
-	https://skillbox.ru/course/profession-designer-interior/
-	https://skillbox.ru/course/profession-motiondesigner/
-	https://skillbox.ru/course/profession-commercial-illustrator-2/
-	https://skillbox.ru/course/profession-fashion-design/
-	https://skillbox.ru/course/profession-landscape-design/
-	https://skillbox.ru/course/profession-designer-interior-landscape/
-	https://skillbox.ru/course/cutting-sewing-2/
-	https://skillbox.ru/course/webdesign-pro/
-	https://skillbox.ru/course/motion-design/
-	https://skillbox.ru/course/interiordesign-pro/
-	https://skillbox.ru/course/illustrator-start/
-	https://skillbox.ru/course/interior-business-course/
-	https://skillbox.ru/course/graphic-design/
-	https://skillbox.ru/course/ux-designer/
-	https://skillbox.ru/course/photoshoppro/
-	https://skillbox.ru/course/landscape-design/
-	https://skillbox.ru/course/profession-business-analyst/
-	https://skillbox.ru/course/profession-project-manager-pro/
-	https://skillbox.ru/course/profession-product-manager-pro/
-	https://skillbox.ru/course/profession-operation-manager/
-	https://skillbox.ru/course/profession-human-resources/
-	https://skillbox.ru/course/profession-producer-online-courses/
-	https://skillbox.ru/course/profession-finance-manager/
-	https://skillbox.ru/course/profession-art-manager/
-	https://skillbox.ru/course/product-marketing-manager/
-	https://skillbox.ru/course/profession-sales-management-b2b-b2c/
-	https://skillbox.ru/course/excel-gsheets/
-	https://skillbox.ru/course/educational-methodist/
-	https://skillbox.ru/course/financial-analyst/
-	https://skillbox.ru/course/producer/
-	https://skillbox.ru/course/msoffice/
-	https://skillbox.ru/course/beauty-industry/
-	https://skillbox.ru/course/team-management/
-	https://skillbox.ru/course/presentation-master/
-	https://skillbox.ru/course/itproject/
-	https://skillbox.ru/course/finance/
-	https://skillbox.ru/media/design/festival_tsifrovogo_dizayna_offf/
-		https://skillbox.ru/media//courses/
-		https://skillbox.ru/media//media/education/
-		https://skillbox.ru/media//media/education/rossiyskie-itkompanii-poprosili-priostanovit-zakupku-inostrannoy-tekhniki-dlya-shkol/
-		https://skillbox.ru/media//media/education/16-podrostkov-otkladyvayut-dengi-na-dopolnitelnoe-obrazovanie/
-		https://skillbox.ru/media//media/education/valeriy-falkov-i-german-gref-sdelali-prognozy-naschyet-budushchego-sfery-obrazovaniya/
-		https://skillbox.ru/media//media/gamedev/
-		https://skillbox.ru/media//media/gamedev/sony-nauchit-igry-pomogat-neopytnym-geymeram/
-		https://skillbox.ru/media//media/design/
-		https://skillbox.ru/media//media/design/v-londone-otkrylas-vystavka-pro-istoriyu-dizayna-krossovok/
-		https://skillbox.ru/media//media/gamedev/fanaty-uvereny-chto-seychas-luchshee-vremya-dlya-reliza-obnovlyennoy-sagi-dead-space/
-		https://skillbox.ru/media//media/business/
-		https://skillbox.ru/media//media/business/pravitelstvo-vydelit-53-mlrd-rubley-na-podderzhku-ii/
-		https://skillbox.ru/media//media/business/sber-zapustil-servis-po-arende-avtomobiley/
-		https://skillbox.ru/media//media/topic/news/
-		https://skillbox.ru/media//media/education/tak-li-strashen-stress-ot-ege-i-kak-uchitelyu-pravilno-nastroit-detey-mnenie-psikhologa/
-		https://skillbox.ru/media//media/topic/opinions/
-		https://skillbox.ru/media//media/design/khudozhnikidizaynery-dali-pikasso-klimt-i-drugie/
-		https://skillbox.ru/media//media/topic/collections/
-		https://skillbox.ru/media//media/gamedev/poka-vy-igrali-tretya-nedelya-maya/
-		https://skillbox.ru/media//media/education/8-voprosov-ob-onlaynmagistrature/
-		https://skillbox.ru/media//media/topic/articles/
-		https://skillbox.ru/media//media/design/tipomaniya-eto-strast-k-bukvam-strast-k-kommunikatsiyam/
-		https://skillbox.ru/media//media/topic/interview/
-		https://skillbox.ru/media//media/code/
-		https://skillbox.ru/media//media/code/vsemirnaya-istoriya-angular/
-		https://skillbox.ru/media//media/design/interview-aleksandra-sankova/
-		https://skillbox.ru/media//media/marketing/chestnyy-marketing-kogda-eto-rabotaet-a-kogda-net/
-		https://skillbox.ru/media//media/marketing/
-		https://skillbox.ru/media//media/business/tekhnologii-v-pokhoronnom-biznese/
-		https://skillbox.ru/media//media/design/chto-takoe-maskoty-i-kak-ikh-ispolzuyut-v-dizayne-firmennogo-stilya/
-		https://skillbox.ru/media//media/code/story-leonid-bondarenko/
-		https://skillbox.ru/media//media/topic/history/
-		https://skillbox.ru/media//media/business/etichnyy-khaking-kak-zarabotat-na-chuzhikh-oshibkakh-i-ne-ugodit-pod-statyu/
-		https://skillbox.ru/media//media/gamedev/ya-zhivu-radi-aplodismentov-put-geymdizaynera-kliffa-blezinski/
-		https://skillbox.ru/media//media/marketing/interview-nikolay-smirnov/
-		https://skillbox.ru/media//media/code/nuzhen-li-programmistu-angliyskiy/
-		https://skillbox.ru/media//media/marketing/story-asya-drozdova/
-		https://skillbox.ru/media//media/management/
-		https://skillbox.ru/media//media/
-	https://skillbox.ru/course/profession-sound-designer/
-	https://skillbox.ru/course/film-editor/
-	https://skillbox.ru/course/profession-screenwriter/
-	https://skillbox.ru/course/profession-film-director/
-	https://skillbox.ru/course/electronic-music-production/
-	https://skillbox.ru/course/profession-cameraman/
-	https://skillbox.ru/course/profession-sound-engineer/
-	https://skillbox.ru/course/producer-of-musical-projects/
-	https://skillbox.ru/course/profession-songwriter/
-	https://skillbox.ru/course/film-producer/
-	https://skillbox.ru/course/ableton-live/
-	https://skillbox.ru/course/sound-designer/
-	https://skillbox.ru/course/film-editor-base/
-	https://skillbox.ru/course/film-editor-davinci/
-	https://skillbox.ru/course/film-editor-pro/
-	https://skillbox.ru/course/electronic-music/
-	https://skillbox.ru/course/elementary-music-theory/
-	https://skillbox.ru/course/filmmaking/
-	https://skillbox.ru/course/storytelling/
-	https://skillbox.ru/course/music-manager/
-	https://skillbox.ru/course/profession-marketolog/
-	https://skillbox.ru/course/profession-smm-specialist/
-	https://skillbox.ru/course/profession-target/
-	https://skillbox.ru/course/profession-copywriter-pro/
-	https://skillbox.ru/course/profession-instagram-marketolog/
-	https://skillbox.ru/course/profession-pr-manager/
-	https://skillbox.ru/course/profession-eventmanager/
-	https://skillbox.ru/course/profession-marketing-director/
-	https://skillbox.ru/course/profession-freelance-marketer/
-	https://skillbox.ru/course/profession-marketolog-analitik/
-	https://skillbox.ru/course/internet-marketolog/
-	https://skillbox.ru/course/smm-marketer/
-	https://skillbox.ru/course/targetologist/
-	https://skillbox.ru/course/instagram/
-	https://skillbox.ru/course/copywriter/
-	https://skillbox.ru/course/seo/
-	https://skillbox.ru/course/prmanager/
-	https://skillbox.ru/course/brand-manager/
-	https://skillbox.ru/course/mobile-apps-analyst/
-	https://skillbox.ru/course/context-advert/
-	https://skillbox.ru/cinema4d/
-	https://skillbox.ru/webdesign/
-		https://skillbox.ru/media/design/festival_tsifrovogo_dizayna_offf//media/authors/aleksej-karelin/
-		https://skillbox.ru/media/design/festival_tsifrovogo_dizayna_offf//media/topic/actions/
-		https://skillbox.ru/media/topic/history//media/topic/history/design/
-		https://skillbox.ru/media/topic/history//media/topic/history/code/
-		https://skillbox.ru/media/topic/history//media/topic/history/gamedev/
-		https://skillbox.ru/media/topic/history//media/topic/history/business/
-		https://skillbox.ru/media/topic/history//media/topic/history/marketing/
-		https://skillbox.ru/media/topic/history//media/topic/history/management/
-		https://skillbox.ru/media/topic/history//media/topic/history/growth/
-		https://skillbox.ru/media/topic/history//media/topic/history/education/
-		https://skillbox.ru/media/topic/history//media/topic/guides/
-		https://skillbox.ru/media/topic/history//media/topic/specials/
-		https://skillbox.ru/media/topic/history//media/base/
-		https://skillbox.ru/media/topic/history//media/code/story-vladislav-kaurov/
-		https://skillbox.ru/media/topic/history//media/management/story-nataliya-malusheva/
-		https://skillbox.ru/media/topic/history//media/gamedev/kak-sdelat-pervuyu-igru-i-ne-vygoret-once-upon-a-time-scary-tales/
-		https://skillbox.ru/media/topic/history//media/education/kak-sozdat-obrazovatelnyy-proekt-analogov-kotorogo-net-na-rynke/
-		https://skillbox.ru/media/topic/history//media/design/story-sofia-sherbina/
-		https://skillbox.ru/media/topic/history//media/code/story-anton-bushmanov/
-		https://skillbox.ru/media/topic/history//media/design/story-valentina-kotelnikova/
-		https://skillbox.ru/media/topic/history//media/design/story-tatyana-nekhaeva/
-		https://skillbox.ru/media/topic/history//media/code/story-dmitriy-mishin/
-		https://skillbox.ru/media/topic/history//media/design/story-elena-zvereva/
-		https://skillbox.ru/media/topic/history//media/marketing/story_valentina_kotenko/
-		https://skillbox.ru/media/topic/history//media/code/story_maksim_kirpichnikov/

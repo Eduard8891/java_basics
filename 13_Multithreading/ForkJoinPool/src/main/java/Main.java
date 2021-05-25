@@ -1,3 +1,7 @@
+import java.io.BufferedWriter;
+import java.io.FileWriter;
+import java.io.IOException;
+import java.io.Writer;
 import java.util.concurrent.ForkJoinPool;
 
 public class Main {
@@ -10,7 +14,16 @@ public class Main {
 
   public static void main(String[] args) {
 
-    new ForkJoinPool().invoke(new ParseUrl(url));
+    String text = new ForkJoinPool().invoke(new ParseUrl(url, "\t"));
+    try {
+      BufferedWriter writer = new BufferedWriter(new FileWriter("result.txt"));
+      writer.write(text);
+      writer.flush();
+      writer.close();
+    } catch (IOException e) {
+      e.printStackTrace();
+    }
+
   }
 }
 
