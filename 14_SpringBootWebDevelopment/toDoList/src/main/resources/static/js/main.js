@@ -1,6 +1,6 @@
-$(function(){
+$(function () {
 
-    const appendTask = function(data){
+    const appendTask = function (data) {
         var taskCode = '<a href="#" class="task-link" data-id="' +
             data.id + '">' + data.name + '</a><br>';
         $('#task-list')
@@ -8,40 +8,37 @@ $(function(){
     };
 
     // Loading tasks on load page
-   $.get('/tasks/', function(response)
-   {
-       for(i in response) {
-           appendTask(response[i]);
-       }
-   });
+    $.get('/tasks/', function (response) {
+        for (i in response) {
+            appendTask(response[i]);
+        }
+    });
 
     //Show adding task form
-    $('#show-add-task-form').click(function(){
+    $('#show-add-task-form').click(function () {
         $('#task-form').css('display', 'flex');
     });
 
     //Closing adding task form
-    $('#task-form').click(function(event){
-        if(event.target === this) {
+    $('#task-form').click(function (event) {
+        if (event.target === this) {
             $(this).css('display', 'none');
         }
     });
 
     //Getting task
-    $(document).on('click', '.task-link', function(){
+    $(document).on('click', '.task-link', function () {
         var link = $(this);
         var taskId = link.data('id');
         $.ajax({
             method: "GET",
-            url: '/tasks/' + taskId,
-            success: function(response)
-            {
+            url: '/task/' + taskId,
+            success: function (response) {
                 var code = '<span>Описание:' + response.description + '</span>';
                 link.parent().append(code);
             },
-            error: function(response)
-            {
-                if(response.status == 404) {
+            error: function (response) {
+                if (response.status === 404) {
                     alert('Задание не найдено!');
                 }
             }
@@ -50,20 +47,18 @@ $(function(){
     });
 
     //Adding task
-    $('#save-task').click(function()
-    {
+    $('#save-task').click(function () {
         var data = $('#task-form form').serialize();
         $.ajax({
             method: "POST",
-            url: '/tasks/',
+            url: '/addtask/',
             data: data,
-            success: function(response)
-            {
+            success: function (response) {
                 $('#task-form').css('display', 'none');
                 var task = {};
                 task.id = response;
                 var dataArray = $('#task-form form').serializeArray();
-                for(i in dataArray) {
+                for (i in dataArray) {
                     task[dataArray[i]['name']] = dataArray[i]['value'];
                 }
                 appendTask(task);
