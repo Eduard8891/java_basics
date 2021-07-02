@@ -1,9 +1,12 @@
 import java.io.File;
 import java.io.IOException;
 import java.nio.file.*;
-import java.util.stream.Stream;
 
-public class FileUtils extends SimpleFileVisitor{
+public class FileUtils extends SimpleFileVisitor {
+
+    private static final long MEGABYTE = 1048576;
+    private static final long GIGABYTE = 1073741824;
+    private static final long KILOBYTE = 1024;
 
     public static long calculateFolderSize(String path) throws IOException {
 
@@ -12,11 +15,29 @@ public class FileUtils extends SimpleFileVisitor{
                 .filter(File::isFile)
                 .mapToLong(File::length)
                 .sum();
+        if (size < KILOBYTE) {
+            System.out.println("Общий размер всех файлов и папок в пути " + path + " : " + size + " Байт");
+            return size;
+        }
+        if (size > KILOBYTE & size < MEGABYTE) {
+            System.out.println("Общий размер всех файлов и папок в пути " + path + " : " + size / KILOBYTE + " КБ");
+            return size / KILOBYTE;
+        } else if (size > MEGABYTE & size < GIGABYTE) {
+            System.out.println("Общий размер всех файлов и папок в пути " + path + " : " + size / MEGABYTE + " МБ");
+            return size / MEGABYTE;
+        } else {
+            long remainder = (size % GIGABYTE) / MEGABYTE;
 
-        long sizeTotal = size/1048576;
-
-        System.out.println("Общий размер всех файлов и папок в пути " + path +" : "+ + sizeTotal + " Мб");
-
-        return size;
+            String remainderString = String.valueOf(remainder);
+            if (remainder < 100) {
+                remainderString = "0" + remainder;
+            }
+            if (remainder < 10) {
+                remainderString = "00" + remainder;
+            }
+            System.out.println("Общий размер всех файлов и папок в пути "
+                    + path + " : " + size / GIGABYTE + "." + remainderString + " ГБ");
+            return size / GIGABYTE;
+        }
     }
 }
