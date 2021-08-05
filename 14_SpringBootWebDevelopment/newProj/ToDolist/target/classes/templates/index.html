@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>index</title>
+</head>
+<body>
+<h1 th:text="${taskCount}">0</h1>
+<div th:each="task : ${allTasks}">
+    <a th:f#field="${task.getName()}">task</a>
+</div>
+Some text
+<br/>
+<hr/>
+
+<a href="/edit">Создание заметки</a>
+
+</body>
+</html>
