@@ -1,5 +1,7 @@
-spring.datasource.url: jdbc:postgres://localhost:8081/tasklib
-spring.datasource.username: test_user
-spring.datasource.password: test_user
-spring.jpa.hibernate.ddl-auto: create
-spring.autoconfigure.exclude: org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration
+#spring.autoconfigure.exclude: org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:8081/tasklib
+    username: test_user
+    password: test_user
+    jpa.hibernate.ddl-auto: none

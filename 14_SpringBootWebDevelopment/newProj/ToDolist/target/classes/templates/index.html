@@ -2,18 +2,22 @@
 <html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
-    <title>index</title>
+    <title>Список дел</title>
 </head>
 <body>
-<h1 th:text="${taskCount}">0</h1>
+<h2>Добавление дела:</h2>
+<!--<form th:method="POST" th:action="@{/add}" th:object="${task}">-->
+<!--    <label for="name">Введите название дела: </label>-->
+<!--    <input type="text" th:field="*{name}" id="name"/>-->
+<!--    <label for="description">Введите описание: </label>-->
+<!--    <input type="text" th:field="*{description}" id="description"/>-->
+<!--    <input type="submit" value="Добавить дело"/>-->
+<!--</form>-->
+<hr>
+<h2>Список дел: (<span th:text="${'всего: '+tasksCount}">0</span>)</h2>
 <div th:each="task : ${allTasks}">
-    <a th:f#field="${task.getName()}">task</a>
+    <a th:href="@{/allTasks/{id}(id=${task.getId()})}"
+       th:text="${task.getName()}">task</a>
 </div>
-Some text
-<br/>
-<hr/>
-
-<a href="/edit">Создание заметки</a>
-
 </body>
 </html>
