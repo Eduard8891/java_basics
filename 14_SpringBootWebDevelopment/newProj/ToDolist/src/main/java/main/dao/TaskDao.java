@@ -46,6 +46,9 @@ public class TaskDao {
         }
         return null;
     }
+    public Task findById(int id) {
+        return taskRepository.findById(id).get();
+    }
 
     public void deleteAll() {
         taskRepository.deleteAll();
