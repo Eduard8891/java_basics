@@ -1,41 +1,32 @@
 package main.controllers;
 
-import lombok.NoArgsConstructor;
+import main.dao.TaskDao;
 import main.model.Task;
-import main.dao.TaskRepository;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-
-import java.util.ArrayList;
-import java.util.List;
 
 @Controller
 public class TaskController {
-    TaskRepository taskRepository;
+    TaskDao taskDao;
 
-    public TaskController(TaskRepository taskRepository) {
-        this.taskRepository = taskRepository;
+    public TaskController(TaskDao taskDao) {
+        this.taskDao = taskDao;
     }
 
-    @RequestMapping("/")
+    @GetMapping("/")
     public String index(Model model) {
-        ArrayList<Task> list = new ArrayList<>();
-        Iterable<Task> task = taskRepository.findAll();
-        task.forEach(list::add);
-        model.addAttribute("allTasks", list);
-        model.addAttribute("tasksCount", list.size());
+        model.addAttribute("allTasks", taskDao.findAll());
+        model.addAttribute("tasksCount", taskDao.findAll().size());
         return "index";
     }
 
     @PostMapping("/add")
     public String add(@ModelAttribute Task task, Model model) {
-        taskRepository.save(task);
-        return "/index";
+        taskDao.add(task);
+        return "index";
     }
 
 }
