@@ -1,4 +1,4 @@
-package main.dao;
+package main.service;
 
 import lombok.AllArgsConstructor;
 import main.model.Task;
@@ -11,7 +11,7 @@ import java.util.Optional;
 
 @Service
 @AllArgsConstructor
-public class TaskDao {
+public class TaskService {
     private final TaskRepository taskRepository;
 
     public int add(Task task) {
@@ -47,7 +47,8 @@ public class TaskDao {
         return null;
     }
     public Task findById(int id) {
-        return taskRepository.findById(id).get();
+        Optional<Task> temp = taskRepository.findById(id);
+        return temp.orElse(null);
     }
 
     public void deleteAll() {

@@ -13,7 +13,6 @@ import javax.persistence.Id;
 @Getter
 @Setter
 @Entity
-@Component
 public class Task {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)

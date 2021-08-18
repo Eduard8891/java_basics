@@ -1,55 +1,63 @@
 package main.controllers;
 
-import main.dao.TaskDao;
+import main.service.TaskService;
 import main.model.Task;
-import org.springframework.ui.Model;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
+
+import java.util.List;
 
 @RestController
 public class TaskController {
-    TaskDao taskDao;
+    TaskService taskService;
 
-    public TaskController(TaskDao taskDao) {
-        this.taskDao = taskDao;
+    public TaskController(TaskService taskService) {
+        this.taskService = taskService;
     }
 
-    @GetMapping("/")
-    public String index(Model model) {
-        model.addAttribute("allTasks", taskDao.findAll());
-        model.addAttribute("tasksCount", taskDao.findAll().size());
-        return "index";
+    @GetMapping("/tasks")
+    public ResponseEntity<List> list() {
+        List<Task> list = taskService.findAll();
+        if (list.isEmpty()) {
+            throw new NullPointerException("Список дел пустой!");
+        }
+        return new ResponseEntity<>(taskService.findAll(), HttpStatus.OK);
     }
 
-    @GetMapping("/get/{id}")
-    public String getById(@PathVariable int id) {
-        return taskDao.findById(id).getName();
+    @GetMapping("/tasks/{id}")
+    public ResponseEntity<Task> getById(@PathVariable int id) {
+        if (taskService.findById(id) == null) {
+            throw new NullPointerException("Номера дела " + id + " не существует!");
+        }
+        return new ResponseEntity<>(taskService.findById(id), HttpStatus.OK);
     }
 
     @PostMapping("/add")
-    public int add(Task task) {
-        taskDao.add(task);
-        return task.getId();
+    public ResponseEntity<Integer> add(Task task) {
+        taskService.add(task);
+        return new ResponseEntity<>(task.getId(), HttpStatus.OK);
     }
 
     @PatchMapping("/update")
-    public int update(Task task) {
-        taskDao.update(task);
-        return task.getId();
+    public ResponseEntity<Integer> update(Task task) {
+        taskService.update(task);
+        return new ResponseEntity<>(task.getId(), HttpStatus.OK);
     }
 
     @DeleteMapping("/delete")
-    public int delete(int id) {
-        Task task = taskDao.findById(id);
+    public ResponseEntity<Integer> delete(int id) {
+        Task task = taskService.findById(id);
         if (task != null) {
-            taskDao.delete(task);
-            return id;
+            taskService.delete(task);
+            return new ResponseEntity<>(task.getId(), HttpStatus.OK);
         }
-        return -1;
+        return ResponseEntity.status(HttpStatus.NOT_FOUND).body(null);
     }
 
     @DeleteMapping("/deleteAll")
-    public String deleteAll() {
-        taskDao.deleteAll();
-        return "done";
+    public ResponseEntity<String> deleteAll() {
+        taskService.deleteAll();
+        return new ResponseEntity<>("Done", HttpStatus.OK);
     }
 }
