@@ -5,9 +5,9 @@
     <title>Описание дела</title>
 </head>
 <body>
-<h2>Дело №: </h2>
-<h3>Имя дела: </h3>
-<h3>Описание: </h3>
+<h2>Дело №: <a th:text="${number}"></a></h2>
+<h3>Имя дела: <a th:text="${name}"></a></h3>
+<h3>Описание: <a th:text="${description}"></a></h3>
 <hr>
 <h2>Редактировать дело: </h2>
 <!--<form th:method="POST" th:action="@{/add}" th:object="${task}">-->

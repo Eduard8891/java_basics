@@ -14,7 +14,7 @@
 <!--    <input type="submit" value="Добавить дело"/>-->
 <!--</form>-->
 <hr>
-<h2>Список дел: (<span th:text="${'всего: '+tasksCount}">0</span>)</h2>
+<h2>Список дел: (<span th:text="${'всего: '+taskCount}">0</span>)</h2>
 <div th:each="task : ${allTasks}">
     <a th:href="@{/allTasks/{id}(id=${task.getId()})}"
        th:text="${task.getName()}">task</a>
