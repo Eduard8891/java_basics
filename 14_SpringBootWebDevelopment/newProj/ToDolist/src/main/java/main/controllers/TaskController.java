@@ -1,5 +1,6 @@
 package main.controllers;
 
+import lombok.AllArgsConstructor;
 import main.service.TaskService;
 import main.model.Task;
 import org.springframework.http.HttpStatus;
@@ -9,12 +10,9 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @RestController
+@AllArgsConstructor
 public class TaskController {
-    TaskService taskService;
-
-    public TaskController(TaskService taskService) {
-        this.taskService = taskService;
-    }
+    private final TaskService taskService;
 
     @GetMapping("/tasks")
     public ResponseEntity<List> list() {

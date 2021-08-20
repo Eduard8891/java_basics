@@ -1,6 +1,7 @@
 package main.service;
 
 import lombok.AllArgsConstructor;
+import lombok.NoArgsConstructor;
 import main.model.Task;
 import main.repo.TaskRepository;
 import org.springframework.stereotype.Service;
@@ -12,7 +13,7 @@ import java.util.Optional;
 @Service
 @AllArgsConstructor
 public class TaskService {
-    private final TaskRepository taskRepository;
+    private TaskRepository taskRepository;
 
     public int add(Task task) {
         taskRepository.save(task);

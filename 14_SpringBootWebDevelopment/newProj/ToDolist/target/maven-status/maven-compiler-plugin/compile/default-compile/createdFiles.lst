@@ -1,0 +1,6 @@
+main\controllers\DefaultController.class
+main\controllers\TaskController.class
+main\service\TaskService.class
+main\model\Task.class
+main\repo\TaskRepository.class
+main\Main.class
