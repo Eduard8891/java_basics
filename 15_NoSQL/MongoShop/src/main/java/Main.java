@@ -3,8 +3,6 @@ public class Main {
         Administration administration = new Administration();
         administration.connect();
         administration.scan();
-
-
     }
 
 }

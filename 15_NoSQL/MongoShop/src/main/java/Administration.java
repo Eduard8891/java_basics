@@ -4,13 +4,24 @@ import com.mongodb.client.AggregateIterable;
 import com.mongodb.client.FindIterable;
 import com.mongodb.client.MongoCollection;
 import com.mongodb.client.MongoDatabase;
+import com.mongodb.client.MongoCollection.*;
+import com.mongodb.client.model.Accumulators;
+import com.mongodb.client.model.Aggregates;
+import com.mongodb.client.model.BsonField;
+import com.mongodb.client.model.Projections;
+import org.bson.BSON;
+import org.bson.BSONObject;
+import org.bson.BsonDocument;
 import org.bson.Document;
+import org.bson.conversions.Bson;
+
+import javax.print.Doc;
 
 import static com.mongodb.client.model.Sorts.descending;
 import static com.mongodb.client.model.Sorts.ascending;
 
-import java.util.Arrays;
-import java.util.Scanner;
+import java.lang.reflect.Array;
+import java.util.*;
 
 public class Administration {
 
@@ -40,13 +51,10 @@ public class Administration {
     public void productStats() {
         System.out.println("Общее количество товаров: " + products.countDocuments());
 
+        AggregateIterable <Document> aggregate = products.aggregate(Collections
+                .singletonList(Aggregates.group(null, Accumulators.avg("avg", "$Price"))));
+        System.out.println("Средняя цена всех товаров: "+ aggregate.first().get("avg"));
 
-        AggregateIterable<Document> aggregateIterable = products.aggregate(Arrays.asList(
-                Document.parse("{ $group: { _id: null, averagePrice: { $avg: '$Price' } } }")
-        ));
-        for (Document document : aggregateIterable) {
-            System.out.println("Средняя цена всех товаров: " + document.get("averagePrice"));
-        }
 
         System.out.print("Самый дорогой товар: ");
         Document max = products.find().sort(descending("Price")).first();
