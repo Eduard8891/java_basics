@@ -4,23 +4,15 @@ import com.mongodb.client.AggregateIterable;
 import com.mongodb.client.FindIterable;
 import com.mongodb.client.MongoCollection;
 import com.mongodb.client.MongoDatabase;
-import com.mongodb.client.MongoCollection.*;
 import com.mongodb.client.model.Accumulators;
 import com.mongodb.client.model.Aggregates;
-import com.mongodb.client.model.BsonField;
-import com.mongodb.client.model.Projections;
-import org.bson.BSON;
-import org.bson.BSONObject;
-import org.bson.BsonDocument;
-import org.bson.Document;
-import org.bson.conversions.Bson;
 
-import javax.print.Doc;
+import org.bson.Document;
+
 
 import static com.mongodb.client.model.Sorts.descending;
 import static com.mongodb.client.model.Sorts.ascending;
 
-import java.lang.reflect.Array;
 import java.util.*;
 
 public class Administration {
@@ -51,9 +43,9 @@ public class Administration {
     public void productStats() {
         System.out.println("Общее количество товаров: " + products.countDocuments());
 
-        AggregateIterable <Document> aggregate = products.aggregate(Collections
+        AggregateIterable<Document> aggregate = products.aggregate(Collections
                 .singletonList(Aggregates.group(null, Accumulators.avg("avg", "$Price"))));
-        System.out.println("Средняя цена всех товаров: "+ aggregate.first().get("avg"));
+        System.out.println("Средняя цена всех товаров: " + aggregate.first().get("avg"));
 
 
         System.out.print("Самый дорогой товар: ");
@@ -127,7 +119,6 @@ public class Administration {
         return true;
     }
 
-
     public void connect() {
         MongoClient mongoClient = new MongoClient("127.0.0.1", 27017);
         MongoDatabase database = mongoClient.getDatabase("local");
@@ -136,5 +127,4 @@ public class Administration {
         shops.drop();
         products.drop();
     }
-
 }

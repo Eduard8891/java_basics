@@ -1,29 +1,31 @@
 <!DOCTYPE html>
 <html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
-  <meta charset="UTF-8">
-  <title>ToDoList</title>
-  <script src="/js/jquery-3.4.0.min.js"></script>
-  <script src="/js/main.js"></script>
-  <link rel="stylesheet" type="text/css" href="/css/styles.css">
+    <meta charset="UTF-8">
+    <title>Список дел</title>
 </head>
 <body>
-<div id="task-form">
-  <form>
-    <h2>Добавление задания</h2>
-    <label>Название задания:</label>
-    <input type="text" name="name" value="">
-    <label>Описание:</label>
-    <input type="text" name="description" value="">
-    <hr>
-    <button id="save-task">Сохранить</button>
-  </form>
+<h2>Добавление дела:</h2>
+<form th:method="post" th:action="@{/add}" th:object="${newtask}">
+    <label for="name">Введите название дела: </label>
+    <input type="text" th:field="*{name}" id="name"/>
+    <label for="description">Введите описание: </label>
+    <input type="text" th:field="*{description}" id="description"/>
+    <input type="submit" value="Добавить дело"/>
+</form>
+<hr>
+<h2>Список дел: (<span th:text="${'всего: '+taskCount}">0</span>)</h2>
+<div th:value="None" th:each="task : ${allTasks}">
+    <form action="#" th:action="@{'/{id}'(id=${task.id})}" th:method="post" >
+    <a th:href="@{/{id}(id=${task.getId()})}"
+       th:text="${task.getName()}"></a>
+        <input type="hidden" name="_method" value="delete" />
+        <button type="submit">Удалить дело</button>
+    </form>
 </div>
-<h1>Список дел (<span th:text="${tasksCount}">0</span>)</h1>
-<button id="show-add-task-form">Добавить задание</button>
-<br><br>
-<div id="task-list">
-
-</div>
+<form action="#" th:action="@{/deleteAll}" th:method="post" >
+<input type="hidden" name="_method" value="delete" />
+<button type="submit">Удалить всё</button>
+</form>
 </body>
 </html>

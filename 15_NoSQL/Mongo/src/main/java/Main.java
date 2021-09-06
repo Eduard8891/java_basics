@@ -84,6 +84,10 @@ public class Main {
         }
 
 
+
+
+        System.out.println(collection.countDocuments());
+
         System.out.println("Студенты старше 40 лет:");
         BasicDBObject gtQuery = new BasicDBObject();
         gtQuery.put("Age", new BasicDBObject("$gt", 40));

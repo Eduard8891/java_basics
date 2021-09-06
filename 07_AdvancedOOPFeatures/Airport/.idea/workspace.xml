@@ -20,60 +20,27 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c46d31db-548b-4ee9-99c4-ba3009c32ba7" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../../03_ObjectsAndClasses/Cat/.idea/artifacts/Cat_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../04_NumbersStringsAndDates/04_NumbersStringsAndDates.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../04_NumbersStringsAndDates/BirthdayCalendar/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../04_NumbersStringsAndDates/BirthdayCalendar/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../04_NumbersStringsAndDates/BirthdayCalendar/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../04_NumbersStringsAndDates/BirthdayCalendar/.idea/libraries/Maven__antlr_antlr_2_7_7.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../04_NumbersStringsAndDates/BirthdayCalendar/.idea/libraries/Maven__com_google_code_findbugs_jsr305_3_0_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../04_NumbersStringsAndDates/BirthdayCalendar/.idea/libraries/Maven__com_google_errorprone_error_prone_annotations_2_3_4.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../04_NumbersStringsAndDates/BirthdayCalendar/.idea/libraries/Maven__com_google_guava_failureaccess_1_0_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../04_NumbersStringsAndDates/BirthdayCalendar/.idea/libraries/Maven__com_google_guava_guava_29_0_jre.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../04_NumbersStringsAndDates/BirthdayCalendar/.idea/libraries/Maven__com_google_guava_listenablefuture_9999_0_empty_to_avoid_conflict_with_guava.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../04_NumbersStringsAndDates/BirthdayCalendar/.idea/libraries/Maven__com_google_j2objc_j2objc_annotations_1_3.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../04_NumbersStringsAndDates/BirthdayCalendar/.idea/libraries/Maven__com_puppycrawl_tools_checkstyle_8_34.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../04_NumbersStringsAndDates/BirthdayCalendar/.idea/libraries/Maven__commons_beanutils_commons_beanutils_1_9_4.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../04_NumbersStringsAndDates/BirthdayCalendar/.idea/libraries/Maven__commons_collections_commons_collections_3_2_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../04_NumbersStringsAndDates/BirthdayCalendar/.idea/libraries/Maven__commons_logging_commons_logging_1_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../04_NumbersStringsAndDates/BirthdayCalendar/.idea/libraries/Maven__info_picocli_picocli_4_3_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../04_NumbersStringsAndDates/BirthdayCalendar/.idea/libraries/Maven__net_sf_saxon_Saxon_HE_9_9_1_7.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../04_NumbersStringsAndDates/BirthdayCalendar/.idea/libraries/Maven__org_antlr_antlr4_runtime_4_8_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../04_NumbersStringsAndDates/BirthdayCalendar/.idea/libraries/Maven__org_apiguardian_apiguardian_api_1_1_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../04_NumbersStringsAndDates/BirthdayCalendar/.idea/libraries/Maven__org_checkerframework_checker_qual_2_11_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../04_NumbersStringsAndDates/BirthdayCalendar/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_api_5_6_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../04_NumbersStringsAndDates/BirthdayCalendar/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_engine_5_6_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../04_NumbersStringsAndDates/BirthdayCalendar/.idea/libraries/Maven__org_junit_platform_junit_platform_commons_1_6_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../04_NumbersStringsAndDates/BirthdayCalendar/.idea/libraries/Maven__org_junit_platform_junit_platform_engine_1_6_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../04_NumbersStringsAndDates/BirthdayCalendar/.idea/libraries/Maven__org_opentest4j_opentest4j_1_2_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../04_NumbersStringsAndDates/Experiments/Experiments.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../04_NumbersStringsAndDates/RegExp/RegExp.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../04_NumbersStringsAndDates/StringExperiments/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../04_NumbersStringsAndDates/src/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/airport_1_0_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Airport.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../03_ObjectsAndClasses/Cat/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../03_ObjectsAndClasses/Cat/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../03_ObjectsAndClasses/RoadController/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../03_ObjectsAndClasses/RoadController/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../03_ObjectsAndClasses/RoadController/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../03_ObjectsAndClasses/RoadController/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../04_NumbersStringsAndDates/BirthdayCalendar/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../04_NumbersStringsAndDates/BirthdayCalendar/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../04_NumbersStringsAndDates/BirthdayCalendar/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../04_NumbersStringsAndDates/BirthdayCalendar/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../04_NumbersStringsAndDates/BirthdayCalendar/BirthdayCalendar.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../../04_NumbersStringsAndDates/BirthdayCalendar/BirthdayCalendar.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../04_NumbersStringsAndDates/BirthdayCalendar/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../04_NumbersStringsAndDates/BirthdayCalendar/src/main/java/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../05_ArraysAndCollections/Experiments/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../05_ArraysAndCollections/Experiments/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../06_InheritanceAndPolymorphism/Homework 6.1/src/Account/BankAccount.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../06_InheritanceAndPolymorphism/Homework 6.1/src/Account/BankAccount.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../06_InheritanceAndPolymorphism/Homework 6.1/src/Account/CardAccount.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../06_InheritanceAndPolymorphism/Homework 6.1/src/Account/CardAccount.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../06_InheritanceAndPolymorphism/Homework 6.1/src/Account/DepositaryAccount.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../06_InheritanceAndPolymorphism/Homework 6.1/src/Account/DepositaryAccount.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../06_InheritanceAndPolymorphism/Homework 6.1/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../06_InheritanceAndPolymorphism/Homework 6.1/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../06_InheritanceAndPolymorphism/Homework 6.3/src/BankClients/SelfEmployed.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../06_InheritanceAndPolymorphism/Homework 6.3/src/BankClients/SelfEmployed.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../13_Multithreading/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../14_SpringBootWebDevelopment/toDoList/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../06_InheritanceAndPolymorphism/Homework 6.4/src/Company.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../06_InheritanceAndPolymorphism/Homework 6.4/src/Company.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../06_InheritanceAndPolymorphism/Homework 6.4/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../06_InheritanceAndPolymorphism/Homework 6.4/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../LambdaExpressions/data/staff.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../LambdaExpressions/data/staff.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../LambdaExpressions/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../LambdaExpressions/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../14_Spring/ToDoList/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../14_Spring/ToDoList/.idea/.name" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../14_Spring/ToDoList/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../14_Spring/ToDoList/.idea/jarRepositories.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../14_Spring/ToDoList/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../14_Spring/ToDoList/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../14_Spring/ToDoList/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../14_Spring/ToDoList/src/main/java/main/DefaultController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../14_Spring/ToDoList/src/main/java/main/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../14_Spring/ToDoList/src/main/java/main/Task.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../14_SpringBootWebDevelopment/toDoList/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../../14_SpringBootWebDevelopment/toDoList/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../14_SpringBootWebDevelopment/toDoList/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../14_SpringBootWebDevelopment/toDoList/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../14_SpringBootWebDevelopment/toDoList/src/main/java/main/TaskController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../14_SpringBootWebDevelopment/toDoList/src/main/java/main/TaskController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../14_SpringBootWebDevelopment/toDoList/src/main/resources/static/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../14_SpringBootWebDevelopment/toDoList/src/main/resources/static/js/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../14_SpringBootWebDevelopment/toDoList/src/main/resources/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../14_SpringBootWebDevelopment/toDoList/src/main/resources/templates/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../14_SpringBootWebDevelopment/toDoList/target/classes/static/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../14_SpringBootWebDevelopment/toDoList/target/classes/static/js/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../14_SpringBootWebDevelopment/toDoList/target/classes/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../14_SpringBootWebDevelopment/toDoList/target/classes/templates/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -106,8 +73,15 @@
   <component name="PropertiesComponent">
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../06_InheritanceAndPolymorphism/Homework 6.4" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
@@ -134,8 +108,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1607450148516</updated>
+      <workItem from="1627293537148" duration="699000" />
     </task>
     <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -148,51 +126,5 @@
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
-  </component>
-  <component name="WindowStateProjectService">
-    <state x="370" y="238" key="#com.intellij.refactoring.typeMigration.ui.FailedConversionsDialog" timestamp="1607455664698">
-      <screen x="0" y="0" width="1280" height="984" />
-    </state>
-    <state x="370" y="238" key="#com.intellij.refactoring.typeMigration.ui.FailedConversionsDialog/0.0.1280.984@0.0.1280.984" timestamp="1607455664698" />
-    <state x="346" y="232" key="FileChooserDialogImpl" timestamp="1607454326269">
-      <screen x="0" y="0" width="1280" height="984" />
-    </state>
-    <state x="346" y="232" key="FileChooserDialogImpl/0.0.1280.984@0.0.1280.984" timestamp="1607454326269" />
-    <state width="1236" height="259" key="GridCell.Tab.0.bottom" timestamp="1607460665622">
-      <screen x="0" y="0" width="1280" height="984" />
-    </state>
-    <state width="1236" height="259" key="GridCell.Tab.0.bottom/0.0.1280.984@0.0.1280.984" timestamp="1607460665622" />
-    <state width="1236" height="259" key="GridCell.Tab.0.center" timestamp="1607460665622">
-      <screen x="0" y="0" width="1280" height="984" />
-    </state>
-    <state width="1236" height="259" key="GridCell.Tab.0.center/0.0.1280.984@0.0.1280.984" timestamp="1607460665622" />
-    <state width="1236" height="259" key="GridCell.Tab.0.left" timestamp="1607460665622">
-      <screen x="0" y="0" width="1280" height="984" />
-    </state>
-    <state width="1236" height="259" key="GridCell.Tab.0.left/0.0.1280.984@0.0.1280.984" timestamp="1607460665622" />
-    <state width="1236" height="259" key="GridCell.Tab.0.right" timestamp="1607460665622">
-      <screen x="0" y="0" width="1280" height="984" />
-    </state>
-    <state width="1236" height="259" key="GridCell.Tab.0.right/0.0.1280.984@0.0.1280.984" timestamp="1607460665622" />
-    <state width="1236" height="320" key="GridCell.Tab.1.bottom" timestamp="1607460568442">
-      <screen x="0" y="0" width="1280" height="984" />
-    </state>
-    <state width="1236" height="320" key="GridCell.Tab.1.bottom/0.0.1280.984@0.0.1280.984" timestamp="1607460568442" />
-    <state width="1236" height="320" key="GridCell.Tab.1.center" timestamp="1607460568442">
-      <screen x="0" y="0" width="1280" height="984" />
-    </state>
-    <state width="1236" height="320" key="GridCell.Tab.1.center/0.0.1280.984@0.0.1280.984" timestamp="1607460568442" />
-    <state width="1236" height="320" key="GridCell.Tab.1.left" timestamp="1607460568442">
-      <screen x="0" y="0" width="1280" height="984" />
-    </state>
-    <state width="1236" height="320" key="GridCell.Tab.1.left/0.0.1280.984@0.0.1280.984" timestamp="1607460568442" />
-    <state width="1236" height="320" key="GridCell.Tab.1.right" timestamp="1607460568442">
-      <screen x="0" y="0" width="1280" height="984" />
-    </state>
-    <state width="1236" height="320" key="GridCell.Tab.1.right/0.0.1280.984@0.0.1280.984" timestamp="1607460568442" />
-    <state x="120" y="65" key="SettingsEditor" timestamp="1607450293540">
-      <screen x="0" y="0" width="1280" height="984" />
-    </state>
-    <state x="120" y="65" key="SettingsEditor/0.0.1280.984@0.0.1280.984" timestamp="1607450293540" />
   </component>
 </project>

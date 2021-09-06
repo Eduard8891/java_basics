@@ -1,25 +1,28 @@
 package main.model;
 
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
+import lombok.*;
+import org.springframework.stereotype.Component;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
-@Getter
-@Setter
 @NoArgsConstructor
 @AllArgsConstructor
+@Getter
+@Setter
 @Entity
 public class Task {
+    @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
+    int id;
+    String name;
+    String description;
 
-  @Id
-  @GeneratedValue(strategy = GenerationType.AUTO)
-  private int id;
-  private String name;
-  private String description;
+    public Task(String name, String description) {
+        this.name = name;
+        this.description = description;
+    }
+
 }
