@@ -2,51 +2,66 @@ import org.xml.sax.Attributes;
 import org.xml.sax.SAXException;
 import org.xml.sax.helpers.DefaultHandler;
 
+import java.sql.Connection;
+import java.sql.SQLException;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
-import java.util.HashMap;
 
 public class XMLHandler extends DefaultHandler {
-    private Voter voter;
+    private int counts = 0;
     private static final SimpleDateFormat birthDayFormat = new SimpleDateFormat("yyyy.MM.dd");
-    private HashMap<Voter, Integer> hashMap;
+
+    private StringBuilder insertQuery;
+    private final Connection connection;
 
     public XMLHandler() {
-        hashMap = new HashMap<>();
+        insertQuery = new StringBuilder();
+        connection = DBConnection.getConnection();
     }
 
     @Override
     public void startElement(String uri, String localName, String qName, Attributes attributes) throws SAXException {
+        if (counts < 5000) {
+            try {
+                if (qName.equals("voter")) {
+                    Date birthday = birthDayFormat.parse(attributes.getValue("birthDay"));
+                    String name = attributes.getValue("name");
+                    String dateForm = birthDayFormat.format(birthday).replace('.', '-');
+                    if (name != null && birthday != null) {
+                        boolean isStart = insertQuery.length() == 0;
+                        insertQuery.append((isStart ? "" : ",") +
+                                "('" + name + "', '" + dateForm + "', 1)");
+                    }
+                }
+            } catch (ParseException e) {
+                e.printStackTrace();
+            }
+            counts++;
+        } else {
+
+            String sql = "INSERT INTO voter_count(name, birthDate, `count`) " +
+                    "VALUES" + insertQuery.toString() +
+                    "ON DUPLICATE KEY UPDATE `count`=`count` + 1";
+            try {
+                connection.createStatement().execute(sql);
+            } catch (SQLException throwables) {
+                throwables.printStackTrace();
+            }
+            insertQuery = new StringBuilder();
+            counts = 0;
+        }
+    }
+
+    public void flush() {
+        String sql = "INSERT INTO voter_count(name, birthDate, `count`) " +
+                "VALUES" + insertQuery.toString() +
+                "ON DUPLICATE KEY UPDATE `count`=`count` + 1";
         try {
-
-            if (qName.equals("voter") && voter == null) {
-                Date birthday = birthDayFormat.parse(attributes.getValue("birthDay"));
-                voter = new Voter(attributes.getValue("name"), birthday);
-            } else if (qName.equals("visit") && voter != null) {
-                int count = hashMap.getOrDefault(voter, 0);
-                hashMap.put(voter, count + 1);
-            }
-
-
-        } catch (ParseException e) {
-            e.printStackTrace();
+            connection.createStatement().execute(sql);
+        } catch (SQLException throwables) {
+            throwables.printStackTrace();
         }
     }
 
-    @Override
-    public void endElement(String uri, String localName, String qName) throws SAXException {
-        if (qName.equals("voter")) {
-            voter = null;
-        }
-    }
-
-    public void printResults() {
-        for (Voter voter : hashMap.keySet()) {
-            int count = hashMap.get(voter);
-            if (count > 1) {
-                System.out.println(voter.toString() + " - " + count);
-            }
-        }
-    }
 }

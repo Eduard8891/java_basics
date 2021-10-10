@@ -12,38 +12,31 @@ import java.util.Date;
 import java.util.HashMap;
 
 public class Loader {
-    private static SimpleDateFormat birthDayFormat = new SimpleDateFormat("yyyy.MM.dd");
-    private static SimpleDateFormat visitDateFormat = new SimpleDateFormat("yyyy.MM.dd HH:mm:ss");
+    private static final SimpleDateFormat birthDayFormat = new SimpleDateFormat("yyyy.MM.dd");
+    private static final SimpleDateFormat visitDateFormat = new SimpleDateFormat("yyyy.MM.dd HH:mm:ss");
 
-    private static HashMap<Integer, WorkTime> voteStationWorkTimes = new HashMap<>();
-    private static HashMap<Voter, Integer> voterCounts = new HashMap<>();
-    private static  String fileName = "res/data-18M.xml";
+    private static final HashMap<Integer, WorkTime> voteStationWorkTimes = new HashMap<>();
+    private static final HashMap<Voter, Integer> voterCounts = new HashMap<>();
+    private static final String fileName = "res/data-0.2M.xml";
 
     public static void main(String[] args) throws Exception {
-
-//        SAXParsing();
-//        DOMParsing();
-
-
-
-
+        DOMParsingAndWriting();
     }
 
-    private static void DOMParsing() throws Exception {
+    private static void DOMParsingAndWriting() throws Exception {
         long start = System.currentTimeMillis();
-        parseFile(fileName);
-//        printResults();
+        parseFile();
         System.out.println("Total time for DOM Parsing: " + (System.currentTimeMillis() - start));
     }
 
 
-    private static void SAXParsing() throws ParserConfigurationException, SAXException, IOException {
+    private static void SAXParsingAndWriting() throws ParserConfigurationException, SAXException, IOException {
         long start = System.currentTimeMillis();
         SAXParserFactory factory = SAXParserFactory.newInstance();
         SAXParser parser = factory.newSAXParser();
         XMLHandler handler = new XMLHandler();
         parser.parse(new File(fileName), handler);
-//        handler.printResults();
+        handler.flush();
         System.out.println("Total time for SAX Parsing: " + (System.currentTimeMillis() - start));
     }
 
@@ -63,28 +56,35 @@ public class Loader {
         }
     }
 
-    private static void parseFile(String fileName) throws Exception {
+    private static void parseFile() throws Exception {
         DocumentBuilderFactory dbf = DocumentBuilderFactory.newInstance();
         DocumentBuilder db = dbf.newDocumentBuilder();
-        Document doc = db.parse(new File(fileName));
-
+        Document doc = db.parse(new File(Loader.fileName));
         findEqualVoters(doc);
-        fixWorkTimes(doc);
     }
 
     private static void findEqualVoters(Document doc) throws Exception {
         NodeList voters = doc.getElementsByTagName("voter");
         int votersCount = voters.getLength();
-        for (int i = 0; i < votersCount; i++) {
+        int counts = 0;
+        int i = 0;
+        for (; ; ) {
             Node node = voters.item(i);
+            if (node == null) {
+                DBConnection.flush();
+                break;
+            }
             NamedNodeMap attributes = node.getAttributes();
-
             String name = attributes.getNamedItem("name").getNodeValue();
-            Date birthDay = birthDayFormat.parse(attributes.getNamedItem("birthDay").getNodeValue());
+            String birthday = attributes.getNamedItem("birthDay").getNodeValue();
+            DBConnection.countVoter(name, birthday);
+            i++;
+            counts++;
 
-            Voter voter = new Voter(name, birthDay);
-            Integer count = voterCounts.get(voter);
-            voterCounts.put(voter, count == null ? 1 : count + 1);
+            if (counts > 4000) {
+                DBConnection.executeMultiInsert();
+                counts = 0;
+            }
         }
     }
 
